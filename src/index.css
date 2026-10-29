@@ -2,15 +2,45 @@
 
 @theme {
   --font-sans: "Nunito", system-ui, sans-serif;
-  --color-principal: #6C5CE7;
-  --color-secundario: #00B894;
-  --color-acento: #FDCB6E;
-  --color-fondo: #FFF9F0;
-  --color-texto: #2D3436;
+  --color-principal: #7C4DFF;
+  --color-secundario: #20B486;
+  --color-acento: #FFB703;
+  --color-fondo: #FFF9EC;
+  --color-texto: #355070;
+  --color-primavera-rosa: #F875AA;
+  --color-primavera-lila: #B59CEB;
+  --color-primavera-menta: #A8E6CF;
+  --color-primavera-cielo: #6ECBF5;
+  --color-primavera-coral: #FF9F80;
 }
 
 body {
   background-color: var(--color-fondo);
+  background-image:
+    radial-gradient(circle at 8% 12%, rgba(248, 117, 170, 0.10) 0 4rem, transparent 4.05rem),
+    radial-gradient(circle at 92% 18%, rgba(110, 203, 245, 0.13) 0 5rem, transparent 5.05rem),
+    radial-gradient(circle at 20% 88%, rgba(168, 230, 207, 0.15) 0 5rem, transparent 5.05rem);
   color: var(--color-texto);
   font-size: 1.125rem;
+  min-height: 100vh;
+}
+
+.emoji-suave {
+  animation: emoji-suave 2.4s ease-in-out infinite;
+  transform-origin: center bottom;
+}
+
+@keyframes emoji-suave {
+  0%, 100% {
+    transform: translateY(0) rotate(-2deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(2deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .emoji-suave {
+    animation: none;
+  }
 }

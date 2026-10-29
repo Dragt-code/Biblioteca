@@ -1,0 +1,104 @@
+[
+  {
+    "id":"la-nube-amable","titulo":"La nube amable","valor":"Amabilidad","emoji":"☁️",
+    "autor":"Equipo Mis Cuentos","fuente":"Cuento original creado para esta aplicación","licencia":"Uso educativo",
+    "paginas":[
+      "En lo alto del cielo vivía una nube pequeña que soñaba con hacer sonreír a todos.",
+      "Cada mañana, la nube recorría el cielo buscando flores que necesitaban agua.",
+      "Compartía pequeñas gotas con los campos secos y las plantas sedientas.",
+      "Un día vio a un pájaro sin hogar bajo la lluvia.",
+      "La nube dejó caer una suave lluvia para refrescarlo, pero siguió buscando refugio.",
+      "Al encontrar una rama acogedora, la nube sonrió. Ser amable también es cuidar a los demás."
+    ],
+    "quiz":[
+      {"pregunta":"¿Qué necesitaban las flores y las plantas?","opciones":["Agua","Chocolate","Arena"],"respuesta":0},
+      {"pregunta":"¿A quién ayudó la nube?","opciones":["A una estrella","A un pájaro","A un león"],"respuesta":1},
+      {"pregunta":"¿Qué aprendió la nube?","opciones":["Que cuidar a los demás es ser amable","Que debía esconderse","Que podía volar sola"],"respuesta":0}
+    ]
+  },
+  {
+    "id":"el-leon-valiente","titulo":"El león valiente","valor":"Valentía","emoji":"🦁",
+    "autor":"Equipo Mis Cuentos","fuente":"Cuento original creado para esta aplicación","licencia":"Uso educativo",
+    "paginas":[
+      "Leo era un leoncito que tenía un poco de miedo de explorar la selva.",
+      "Una mañana escuchó a un conejo pedir ayuda cerca del río.",
+      "Aunque sentía nervios, Leo respiró profundo y caminó hacia él.",
+      "Al cruzar el sendero oscuro, ayudó al conejo a volver a su casa.",
+      "Sus amigos celebraron su valentía y le dieron las gracias.",
+      "Leo aprendió que ser valiente no es no tener miedo, sino ayudar a pesar de él."
+    ],
+    "quiz":[
+      {"pregunta":"¿Qué le daba miedo a Leo?","opciones":["Explorar la selva","Comer frutas","Dormir"],"respuesta":0},
+      {"pregunta":"¿A quién ayudó Leo?","opciones":["A una mariposa","A un conejo","A una nube"],"respuesta":1},
+      {"pregunta":"¿Qué significa ser valiente?","opciones":["Ayudar aunque tengas miedo","No sentir nunca miedo","No salir de casa"],"respuesta":0}
+    ]
+  },
+  {
+    "id":"los-amigos-del-bosque","titulo":"Los amigos del bosque","valor":"Amistad","emoji":"🌳",
+    "autor":"Equipo Mis Cuentos","fuente":"Cuento original creado para esta aplicación","licencia":"Uso educativo",
+    "paginas":[
+      "En el bosque vivían animales que jugaban juntos todos los días.",
+      "Pero un día, una tormenta derribó el puente de madera.",
+      "Cada uno quiso ayudar a los demás a cruzar el río.",
+      "La ardilla encontró ramas, el conejo recogió hojas y el ciervo tomó la cuerda.",
+      "Entre todos construyeron un puente nuevo y seguro.",
+      "Desde entonces entendieron que la amistad hace posible lo que parece difícil."
+    ],
+    "quiz":[
+      {"pregunta":"¿Qué derribó la tormenta?","opciones":["Un árbol mágico","El puente de madera","La casa del ciervo"],"respuesta":1},
+      {"pregunta":"¿Cómo ayudaron los animales?","opciones":["Cada uno hizo una parte","Se quedaron sin hacer nada","Corrieron lejos"],"respuesta":0},
+      {"pregunta":"¿Qué hace posible la amistad?","opciones":["Lo imposible parece difícil","Lo difícil puede ser posible","Que nadie ayude"],"respuesta":1}
+    ]
+  },
+  {
+    "id":"la-semillita-curiosa","titulo":"La semillita curiosa","valor":"Curiosidad","emoji":"🌱",
+    "autor":"Equipo Mis Cuentos","fuente":"Cuento original creado para esta aplicación","licencia":"Uso educativo",
+    "paginas":[
+      "Una semillita viva bajo la tierra preguntaba qué había encima.",
+      "La lluvia la ayudó a crecer y sus hojas comenzaron a salir.",
+      "La curiosa semillita observaba a los insectos y escuchaba a los pájaros.",
+      "Le encantaba descubrir colores, sonidos y nuevos caminos.",
+      "Cuando se hizo una flor, seguía mirando el mundo con alegría.",
+      "Así aprendió que preguntar y explorar nos ayuda a descubrir cosas maravillosas."
+    ],
+    "quiz":[
+      {"pregunta":"¿Qué quería saber la semillita?","opciones":["Qué había encima","Cómo correr rápido","Dónde dormían las estrellas"],"respuesta":0},
+      {"pregunta":"¿Qué le ayudó a crecer?","opciones":["La arena seca","La lluvia","El viento fuerte"],"respuesta":1},
+      {"pregunta":"¿Qué nos ayuda a descubrir cosas nuevas?","opciones":["Preguntar y explorar","Quedarnos quietos","No mirar nada"],"respuesta":0}
+    ]
+  },
+  {
+    "id":"el-pajaro-solidario","titulo":"El pájaro solidario","valor":"Solidaridad","emoji":"🐦",
+    "autor":"Equipo Mis Cuentos","fuente":"Cuento original creado para esta aplicación","licencia":"Uso educativo",
+    "paginas":[
+      "Pipo era un pájaro que volaba alegre por todas partes.",
+      "Una tarde encontró un nido que estaba casi vacío de ramas.",
+      "Pipo recogió ramitas con su pico para ayudar a sus vecinos.",
+      "Los demás pájaros llegaron con hojas, musgo y pedacitos de hilo.",
+      "Juntos terminaron pronto el nuevo nido.",
+      "Pipo descubrió que compartir lo que tenemos hace más fuertes a nuestros amigos."
+    ],
+    "quiz":[
+      {"pregunta":"¿Qué encontró Pipo?","opciones":["Un nido vacío de ramas","Una caja de juguetes","Una fruta grande"],"respuesta":0},
+      {"pregunta":"¿Qué llevó Pipo al nido?","opciones":["Piedras","Ramitas","Arena"],"respuesta":1},
+      {"pregunta":"¿Qué hicieron los pájaros juntos?","opciones":["Construyeron un nuevo nido","Se alejaron","Cortaron un árbol"],"respuesta":0}
+    ]
+  },
+  {
+    "id":"la-estrella-paciente","titulo":"La estrella paciente","valor":"Paciencia","emoji":"⭐",
+    "autor":"Equipo Mis Cuentos","fuente":"Cuento original creado para esta aplicación","licencia":"Uso educativo",
+    "paginas":[
+      "Una pequeña estrella esperaba su turno para brillar en el cielo.",
+      "Al principio quería iluminarlo todo a la vez.",
+      "Su mamá le enseñó que cada luz aparece en el momento adecuado.",
+      "La estrella practicó esperar con calma y mirar hacia arriba.",
+      "Cuando llegó la noche, su brillo iluminó el camino de muchos viajeros.",
+      "Comprendió que tener paciencia permite que las cosas buenas sucedan."
+    ],
+    "quiz":[
+      {"pregunta":"¿Qué esperaba hacer la estrella?","opciones":["Brillar en el cielo","Dormir todo el día","Esconderse"],"respuesta":0},
+      {"pregunta":"¿Qué le enseñó su mamá?","opciones":["Que cada luz aparece a su momento","Que debía iluminar siempre","Que no debía esperar"],"respuesta":0},
+      {"pregunta":"¿Quiénes recibieron su luz?","opciones":["Los viajeros","Los peces del río","Las plantas de la montaña"],"respuesta":0}
+    ]
+  }
+]
