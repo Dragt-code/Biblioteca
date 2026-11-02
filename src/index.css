@@ -17,9 +17,12 @@
 body {
   background-color: var(--color-fondo);
   background-image:
-    radial-gradient(circle at 8% 12%, rgba(248, 117, 170, 0.10) 0 4rem, transparent 4.05rem),
-    radial-gradient(circle at 92% 18%, rgba(110, 203, 245, 0.13) 0 5rem, transparent 5.05rem),
-    radial-gradient(circle at 20% 88%, rgba(168, 230, 207, 0.15) 0 5rem, transparent 5.05rem);
+    linear-gradient(rgba(255, 249, 236, 0.82), rgba(255, 249, 236, 0.82)),
+    url('./assets/Fondo.webp');
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   color: var(--color-texto);
   font-size: 1.125rem;
   min-height: 100vh;

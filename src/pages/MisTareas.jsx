@@ -4,6 +4,47 @@ import cuentos from '../data/cuentos.json'
 export default function MisTareas() {
   const [respuestas, setRespuestas] = useState({})
 
+  const obtenerTareaNovela = (cuento) => {
+    switch (cuento.id) {
+      case 'la-nube-amable':
+        return {
+          pregunta: '¿Qué ruta ayuda mejor al pájaro?',
+          opciones: ['Abrir senderos con lluvia suave', 'Buscar flores sin ayudar', 'Irse sin decidir'],
+          respuesta: 0,
+        }
+      case 'el-leon-valiente':
+        return {
+          pregunta: '¿Cuál es una forma valiente de pedir ayuda?',
+          opciones: ['Llamar a los amigos y avanzar juntos', 'Correr sin mirar', 'Dejar solo al conejo'],
+          respuesta: 0,
+        }
+      case 'los-amigos-del-bosque':
+        return {
+          pregunta: '¿Qué opción muestra mejor cooperación?',
+          opciones: ['Construir el puente entre todos', 'Cruzar sin avisar', 'Esperar sin colaborar'],
+          respuesta: 0,
+        }
+      case 'la-semillita-curiosa':
+        return {
+          pregunta: '¿Cómo continúa aprendiendo la semillita?',
+          opciones: ['Observando la naturaleza', 'Ignorando lo que pasa', 'No preguntando nada'],
+          respuesta: 0,
+        }
+      case 'el-pajaro-solidario':
+        return {
+          pregunta: '¿Cuál es una acción solidaria de Pipo?',
+          opciones: ['Organizar la ayuda de sus vecinos', 'Guardar todo para él', 'Abandonar el nido'],
+          respuesta: 0,
+        }
+      default:
+        return {
+          pregunta: '¿Qué ayuda a la estrella a brillar?',
+          opciones: ['Practicar con paciencia cada noche', 'Apagar su luz', 'Brillar sin esperar'],
+          respuesta: 0,
+        }
+    }
+  }
+
   const completarTarea = (cuentoId, indicePregunta, opcionIndice, correcta) => {
     if (opcionIndice !== correcta) return
 
@@ -12,9 +53,9 @@ export default function MisTareas() {
   }
 
   const completadas = Object.keys(respuestas).length
-  const tareas = cuentos.map((cuento, indice) => ({
+  const tareas = cuentos.map((cuento) => ({
     cuento,
-    pregunta: cuento.quiz[indice % cuento.quiz.length],
+    pregunta: obtenerTareaNovela(cuento),
   }))
 
   return (
