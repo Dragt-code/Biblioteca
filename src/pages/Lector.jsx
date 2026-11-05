@@ -99,10 +99,12 @@ export default function Lector() {
       case 4:
         if (rutaElegida === 'a') return novela.textoA
         if (rutaElegida === 'b') return novela.textoB
+        if (rutaElegida === 'c') return 'Unimos las mejores ideas, escuchamos a todos y elegimos una solución cuidadosa.'
         return novela.decision
       case 5:
         if (rutaElegida === 'a') return novela.textoAFinal
         if (rutaElegida === 'b') return novela.textoBFinal
+        if (rutaElegida === 'c') return 'La solución combinada permitió resolver el problema con ayuda y paciencia.'
         return paginas[5]
       default:
         return paginas[0]
@@ -138,7 +140,7 @@ export default function Lector() {
         </div>
 
         {mostrarDecision && (
-          <div className="mt-4 grid gap-3 sm:grid-cols-2">
+          <div className="mt-4 grid gap-3 sm:grid-cols-3">
             <button
               type="button"
               onClick={() => {
@@ -158,6 +160,16 @@ export default function Lector() {
               className="flex min-h-16 items-center justify-center rounded-2xl border-2 border-primavera-rosa bg-primavera-rosa/20 px-5 py-4 text-lg font-black text-texto transition-transform hover:-translate-y-1 hover:bg-primavera-rosa/35"
             >
               B. {novela.opcionB}
+            </button>
+            <button
+              type="button"
+              onClick={() => {
+                setRutaElegida('c')
+                setEstadoPagina({ id, pagina: 4 })
+              }}
+              className="flex min-h-16 items-center justify-center rounded-2xl border-2 border-primavera-menta bg-primavera-menta/25 px-5 py-4 text-lg font-black text-texto transition-transform hover:-translate-y-1 hover:bg-primavera-menta/40"
+            >
+              C. Combinar las mejores ideas
             </button>
           </div>
         )}

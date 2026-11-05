@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom'
 export default function Inicio() {
   return (
     <section className="relative flex w-full items-center justify-center overflow-hidden rounded-[2rem] border border-primavera-lila/30 bg-gradient-to-br from-white via-primavera-menta/20 to-primavera-cielo/20 p-5 shadow-lg sm:p-10">
-      <span className="absolute left-5 top-5 text-4xl sm:text-5xl" aria-hidden="true">🌸</span>
-      <span className="absolute bottom-5 right-5 text-4xl sm:text-5xl" aria-hidden="true">🦋</span>
+      <span className="emoji-balanceo absolute left-5 top-5 text-4xl sm:text-5xl" aria-hidden="true">🌸</span>
+      <span className="emoji-volador absolute bottom-5 right-5 text-4xl sm:text-5xl" aria-hidden="true">🦋</span>
       <div className="flex w-full max-w-3xl flex-col items-center text-center">
         <div
           className="emoji-suave mb-4 select-none text-7xl sm:mb-6 sm:text-9xl"
@@ -15,10 +15,10 @@ export default function Inicio() {
         </div>
 
         <h1 className="text-4xl font-black leading-tight text-principal sm:text-6xl">
-          ¡Hola, pequeño explorador!
+          ¡Tu próxima aventura empieza aquí!
         </h1>
         <p className="mt-4 max-w-xl text-xl font-bold text-texto sm:text-2xl">
-          Cada cuento guarda una aventura esperándote.
+          Lee historias increíbles, descubre nuevos caminos y pon a prueba tu imaginación.
         </p>
 
         <Link

@@ -28,9 +28,54 @@ body {
   min-height: 100vh;
 }
 
+[data-theme="dark"] body {
+  background-color: #202638;
+  background-image:
+    linear-gradient(rgba(32, 38, 56, 0.94), rgba(32, 38, 56, 0.94)),
+    url('./assets/Fondo.webp');
+  color: #eef2ff;
+}
+
+[data-theme="dark"] .bg-white,
+[data-theme="dark"] .bg-white\/95 {
+  background-color: #2a3147 !important;
+}
+
+[data-theme="dark"] .bg-fondo {
+  background-color: #252b3e !important;
+}
+
+[data-theme="dark"] .text-texto,
+[data-theme="dark"] footer {
+  color: #eef2ff !important;
+}
+
+[data-theme="dark"] .border-primavera-lila\/30,
+[data-theme="dark"] .ring-principal\/10 {
+  border-color: rgba(181, 156, 235, 0.35) !important;
+}
+
 .emoji-suave {
   animation: emoji-suave 2.4s ease-in-out infinite;
   transform-origin: center bottom;
+}
+
+.emoji-balanceo {
+  animation: balanceo 3s ease-in-out infinite;
+}
+
+.emoji-volador {
+  animation: volador 4s ease-in-out infinite;
+}
+
+@keyframes balanceo {
+  0%, 100% { transform: rotate(-8deg); }
+  50% { transform: rotate(8deg) translateY(-8px); }
+}
+
+@keyframes volador {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(-18px, -12px) rotate(-6deg); }
 }
 
 @keyframes emoji-suave {

@@ -17,6 +17,7 @@ export default function App() {
         <Route path="cuento/:id/quiz" element={<Quiz />} />
         <Route path="creditos" element={<Creditos />} />
         <Route path="tareas" element={<MisTareas />} />
+        <Route path="extras" element={<MisTareas />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Route>
     </Routes>
