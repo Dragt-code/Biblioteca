@@ -3,6 +3,7 @@ import Layout from './components/Layout'
 import Biblioteca from './pages/Biblioteca'
 import Creditos from './pages/Creditos'
 import Inicio from './pages/Inicio'
+import Docentes from './pages/Docentes'
 import Lector from './pages/Lector'
 import Quiz from './pages/Quiz'
 import MisTareas from './pages/MisTareas'
@@ -15,6 +16,7 @@ export default function App() {
         <Route path="cuentos" element={<Biblioteca />} />
         <Route path="cuento/:id" element={<Lector />} />
         <Route path="cuento/:id/quiz" element={<Quiz />} />
+        <Route path="docentes" element={<Docentes />} />
         <Route path="creditos" element={<Creditos />} />
         <Route path="tareas" element={<MisTareas />} />
         <Route path="extras" element={<MisTareas />} />

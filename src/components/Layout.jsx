@@ -38,6 +38,9 @@ export default function Layout() {
             <NavLink to="/tareas" className={navLinkClassName}>
               Extras
             </NavLink>
+            <NavLink to="/docentes" className={navLinkClassName}>
+              Docentes
+            </NavLink>
             <button
               type="button"
               onClick={() => setModoOscuro((actual) => !actual)}

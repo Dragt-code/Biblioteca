@@ -1,0 +1,182 @@
+{
+  "aula": "Aula Horizonte (demostración)",
+  "aviso": "Datos de ejemplo, no son niños reales",
+  "cuentos": [
+    {
+      "id": "la-nube-amable",
+      "titulo": "La nube amable",
+      "emoji": "☁️",
+      "finales": [
+        { "id": "lluvia-cuidada", "nombre": "Una lluvia cuidadosa" },
+        { "id": "refugio-verde", "nombre": "Un refugio entre las flores" },
+        { "id": "apoyo-compartido", "nombre": "Una ayuda entre todos" }
+      ]
+    },
+    {
+      "id": "el-leon-valiente",
+      "titulo": "El león valiente",
+      "emoji": "🦁",
+      "finales": [
+        { "id": "paso-seguro", "nombre": "Un paso seguro" },
+        { "id": "pedir-apoyo", "nombre": "Pedir apoyo a sus amigos" },
+        { "id": "escucha-atenta", "nombre": "Escuchar al conejo" }
+      ]
+    },
+    {
+      "id": "los-amigos-del-bosque",
+      "titulo": "Los amigos del bosque",
+      "emoji": "🌳",
+      "finales": [
+        { "id": "puente-colaborativo", "nombre": "Un puente colaborativo" },
+        { "id": "balsa-resistente", "nombre": "Una balsa resistente" },
+        { "id": "plan-compartido", "nombre": "Un plan compartido" }
+      ]
+    },
+    {
+      "id": "la-semillita-curiosa",
+      "titulo": "La semillita curiosa",
+      "emoji": "🌱",
+      "finales": [
+        { "id": "hormigas", "nombre": "Observar a las hormigas" },
+        { "id": "aves", "nombre": "Seguir el canto de las aves" },
+        { "id": "observacion", "nombre": "Descubrir observando" }
+      ]
+    },
+    {
+      "id": "el-pajaro-solidario",
+      "titulo": "El pájaro solidario",
+      "emoji": "🐦",
+      "finales": [
+        { "id": "ramitas-firmes", "nombre": "Reunir ramitas firmes" },
+        { "id": "equipo-vecinos", "nombre": "Organizar al equipo de vecinos" },
+        { "id": "nido-revisado", "nombre": "Revisar juntos el nido" }
+      ]
+    },
+    {
+      "id": "la-estrella-paciente",
+      "titulo": "La estrella paciente",
+      "emoji": "⭐",
+      "finales": [
+        { "id": "practica-paciente", "nombre": "Practicar con paciencia" },
+        { "id": "pausa-observacion", "nombre": "Hacer una pausa y observar" },
+        { "id": "luz-compartida", "nombre": "Compartir su luz" }
+      ]
+    }
+  ],
+  "estudiantes": [
+    {
+      "codigo": "LEON-01",
+      "cuentosTerminados": ["la-nube-amable", "el-leon-valiente", "los-amigos-del-bosque", "la-semillita-curiosa", "el-pajaro-solidario", "la-estrella-paciente"],
+      "finalesDescubiertos": [
+        { "cuentoId": "la-nube-amable", "finalId": "refugio-verde" },
+        { "cuentoId": "el-leon-valiente", "finalId": "pedir-apoyo" },
+        { "cuentoId": "los-amigos-del-bosque", "finalId": "puente-colaborativo" },
+        { "cuentoId": "la-semillita-curiosa", "finalId": "observacion" },
+        { "cuentoId": "el-pajaro-solidario", "finalId": "equipo-vecinos" },
+        { "cuentoId": "la-estrella-paciente", "finalId": "practica-paciente" }
+      ],
+      "extrasCompletados": {
+        "la-nube-amable": 2, "el-leon-valiente": 2, "los-amigos-del-bosque": 1,
+        "la-semillita-curiosa": 2, "el-pajaro-solidario": 1, "la-estrella-paciente": 1
+      }
+    },
+    {
+      "codigo": "NUBE-02",
+      "cuentosTerminados": ["la-nube-amable", "el-leon-valiente", "los-amigos-del-bosque", "el-pajaro-solidario"],
+      "finalesDescubiertos": [
+        { "cuentoId": "la-nube-amable", "finalId": "lluvia-cuidada" },
+        { "cuentoId": "el-leon-valiente", "finalId": "paso-seguro" },
+        { "cuentoId": "los-amigos-del-bosque", "finalId": "balsa-resistente" },
+        { "cuentoId": "el-pajaro-solidario", "finalId": "ramitas-firmes" }
+      ],
+      "extrasCompletados": {
+        "la-nube-amable": 2, "el-leon-valiente": 1, "los-amigos-del-bosque": 1,
+        "la-semillita-curiosa": 0, "el-pajaro-solidario": 2, "la-estrella-paciente": 0
+      }
+    },
+    {
+      "codigo": "BOSQUE-03",
+      "cuentosTerminados": ["la-nube-amable", "los-amigos-del-bosque", "la-semillita-curiosa", "la-estrella-paciente"],
+      "finalesDescubiertos": [
+        { "cuentoId": "la-nube-amable", "finalId": "refugio-verde" },
+        { "cuentoId": "los-amigos-del-bosque", "finalId": "puente-colaborativo" },
+        { "cuentoId": "la-semillita-curiosa", "finalId": "aves" },
+        { "cuentoId": "la-estrella-paciente", "finalId": "pausa-observacion" }
+      ],
+      "extrasCompletados": {
+        "la-nube-amable": 1, "el-leon-valiente": 0, "los-amigos-del-bosque": 2,
+        "la-semillita-curiosa": 2, "el-pajaro-solidario": 0, "la-estrella-paciente": 1
+      }
+    },
+    {
+      "codigo": "SEMILLA-04",
+      "cuentosTerminados": ["la-nube-amable", "el-leon-valiente", "la-semillita-curiosa", "el-pajaro-solidario"],
+      "finalesDescubiertos": [
+        { "cuentoId": "la-nube-amable", "finalId": "lluvia-cuidada" },
+        { "cuentoId": "el-leon-valiente", "finalId": "pedir-apoyo" },
+        { "cuentoId": "la-semillita-curiosa", "finalId": "hormigas" },
+        { "cuentoId": "el-pajaro-solidario", "finalId": "equipo-vecinos" }
+      ],
+      "extrasCompletados": {
+        "la-nube-amable": 1, "el-leon-valiente": 2, "los-amigos-del-bosque": 0,
+        "la-semillita-curiosa": 2, "el-pajaro-solidario": 1, "la-estrella-paciente": 0
+      }
+    },
+    {
+      "codigo": "PIPO-05",
+      "cuentosTerminados": ["la-nube-amable", "los-amigos-del-bosque", "el-pajaro-solidario"],
+      "finalesDescubiertos": [
+        { "cuentoId": "la-nube-amable", "finalId": "apoyo-compartido" },
+        { "cuentoId": "los-amigos-del-bosque", "finalId": "plan-compartido" },
+        { "cuentoId": "el-pajaro-solidario", "finalId": "equipo-vecinos" }
+      ],
+      "extrasCompletados": {
+        "la-nube-amable": 2, "el-leon-valiente": 0, "los-amigos-del-bosque": 1,
+        "la-semillita-curiosa": 0, "el-pajaro-solidario": 2, "la-estrella-paciente": 0
+      }
+    },
+    {
+      "codigo": "ESTRELLA-06",
+      "cuentosTerminados": ["el-leon-valiente", "la-semillita-curiosa", "la-estrella-paciente"],
+      "finalesDescubiertos": [
+        { "cuentoId": "el-leon-valiente", "finalId": "escucha-atenta" },
+        { "cuentoId": "la-semillita-curiosa", "finalId": "observacion" },
+        { "cuentoId": "la-estrella-paciente", "finalId": "practica-paciente" }
+      ],
+      "extrasCompletados": {
+        "la-nube-amable": 0, "el-leon-valiente": 1, "los-amigos-del-bosque": 0,
+        "la-semillita-curiosa": 2, "el-pajaro-solidario": 0, "la-estrella-paciente": 2
+      }
+    },
+    {
+      "codigo": "LUNA-07",
+      "cuentosTerminados": ["la-nube-amable", "los-amigos-del-bosque", "el-pajaro-solidario", "la-estrella-paciente"],
+      "finalesDescubiertos": [
+        { "cuentoId": "la-nube-amable", "finalId": "apoyo-compartido" },
+        { "cuentoId": "los-amigos-del-bosque", "finalId": "puente-colaborativo" },
+        { "cuentoId": "el-pajaro-solidario", "finalId": "nido-revisado" },
+        { "cuentoId": "la-estrella-paciente", "finalId": "luz-compartida" }
+      ],
+      "extrasCompletados": {
+        "la-nube-amable": 2, "el-leon-valiente": 0, "los-amigos-del-bosque": 1,
+        "la-semillita-curiosa": 0, "el-pajaro-solidario": 1, "la-estrella-paciente": 2
+      }
+    },
+    {
+      "codigo": "LIBRO-08",
+      "cuentosTerminados": ["la-nube-amable", "el-leon-valiente", "los-amigos-del-bosque", "la-semillita-curiosa", "el-pajaro-solidario", "la-estrella-paciente"],
+      "finalesDescubiertos": [
+        { "cuentoId": "la-nube-amable", "finalId": "refugio-verde" },
+        { "cuentoId": "el-leon-valiente", "finalId": "pedir-apoyo" },
+        { "cuentoId": "los-amigos-del-bosque", "finalId": "puente-colaborativo" },
+        { "cuentoId": "la-semillita-curiosa", "finalId": "observacion" },
+        { "cuentoId": "el-pajaro-solidario", "finalId": "equipo-vecinos" },
+        { "cuentoId": "la-estrella-paciente", "finalId": "practica-paciente" }
+      ],
+      "extrasCompletados": {
+        "la-nube-amable": 2, "el-leon-valiente": 2, "los-amigos-del-bosque": 2,
+        "la-semillita-curiosa": 2, "el-pajaro-solidario": 2, "la-estrella-paciente": 2
+      }
+    }
+  ]
+}
