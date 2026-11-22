@@ -5,5 +5,5 @@ compatibility_date = "2026-11-02"
 [[d1_databases]]
 binding = "DB"
 database_name = "biblioteca-auth"
-database_id = "00000000-0000-0000-0000-000000000000"
+database_id = "f90ba5d7-6d98-4bac-bce1-2438bad1a6d8"
 migrations_dir = "migrations"
