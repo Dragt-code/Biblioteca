@@ -1,116 +1,1808 @@
 [
   {
-    "id":"la-nube-amable","titulo":"La nube amable","valor":"Amabilidad","emoji":"☁️",
-    "autor":"Equipo Mis Cuentos","fuente":"Cuento original creado para esta aplicación","licencia":"Uso educativo",
-    "paginas":[
-      "En lo alto del cielo vivía una nube pequeña que soñaba con hacer sonreír a todos.",
-      "Cada mañana, la nube recorría el cielo buscando flores que necesitaban agua.",
-      "Compartía pequeñas gotas con los campos secos y las plantas sedientas.",
-      "Un día vio a un pájaro sin hogar bajo la lluvia.",
-      "La nube dejó caer una suave lluvia para refrescarlo, pero siguió buscando refugio.",
-      "Al encontrar una rama acogedora, la nube sonrió. Ser amable también es cuidar a los demás.",
-      "Antes de continuar su viaje, la nube señaló caminos seguros para otras criaturas.",
-      "Desde ese día comprendió que ayudar no siempre requiere grandes gestos: una gota o una palabra pueden marcar una diferencia."
+    "id": "la-nube-amable",
+    "titulo": "La nube amable",
+    "valor": "Amabilidad",
+    "emoji": "☁️",
+    "edad": "6-10",
+    "autor": "Equipo Mis Cuentos",
+    "fuente": "Cuento original creado para esta aplicación",
+    "licencia": "Uso educativo",
+    "secciones": [
+      {
+        "n": 1,
+        "titulo": "Nube, la saludadora",
+        "texto": "En lo alto del cielo vivía Nube, pequeña y esponjosa, que soñaba con hacer sonreír a quienes encontraba. Cada mañana viajaba despacio sobre los campos y saludaba a las flores.\n\n—¡Buenos días! ¿Necesitan un poco de agua? —preguntaba.\n\nLas plantas movían sus hojas con alegría."
+      },
+      {
+        "n": 2,
+        "titulo": "Mirar con atención",
+        "texto": "Con el tiempo, Nube descubrió algo curioso. Los tulipanes bebían felices la lluvia, pero una margarita pequeñita seguía con la cabeza baja aunque estuviera mojada.\n\n—No quiero más agua —susurró la margarita—. Solo quería que alguien me hiciera compañía.\n\nNube aprendió a mirar con atención: cada quien necesita algo distinto."
+      },
+      {
+        "n": 3,
+        "titulo": "El pajarito perdido",
+        "texto": "Una tarde, el viento empujó a un pajarito lejos de su nido. Se llamaba Piri y estaba muy cansado. Nube lo vio temblar sobre una rama seca, con las plumas despeinadas.\n\n—Hola —dijo Nube con voz suave.\n\nPiri la miró, pero no dijo nada."
+      },
+      {
+        "n": 4,
+        "titulo": "¿Cómo ayudar?",
+        "texto": "Nube quería ayudar, pero esta vez no sabía cómo. Piri tenía los ojitos muy abiertos y las alitas apretadas. El cielo se estaba poniendo naranja y pronto llegaría la noche.\n\n«Ser amable es ayudar —pensó Nube—, pero ¿de qué manera?»\n\nSabía hacer muchas cosas. Ahora tenía que escoger una."
+      },
+      {
+        "n": 5,
+        "titulo": "Tres maneras de ser amable",
+        "texto": "Nube podía dejar caer unas gotas frescas y darle sombra para que descansara. Podía acercarse y preguntarle, con calma, qué necesitaba. O podía transformarse en formas divertidas —un conejo, un barco, un sombrero— para hacerlo sonreír.\n\nLa noche se acercaba. ¿Qué haría Nube?"
+      }
     ],
-    "quiz":[
-      {"pregunta":"¿Qué necesitaban las flores y las plantas?","opciones":["Agua","Chocolate","Arena"],"respuesta":0},
-      {"pregunta":"¿A quién ayudó la nube?","opciones":["A una estrella","A un pájaro","A un león"],"respuesta":1},
-      {"pregunta":"¿Qué aprendió la nube?","opciones":["Que cuidar a los demás es ser amable","Que debía esconderse","Que podía volar sola"],"respuesta":0}
-    ]
+    "decision": {
+      "pregunta": "¿Cómo crees que Nube puede ser amable con Piri?",
+      "opciones": [
+        {
+          "id": "a",
+          "emoji": "💧",
+          "texto": "Cuidarlo: darle gotas frescas y sombra",
+          "camino": "a"
+        },
+        {
+          "id": "b",
+          "emoji": "👂",
+          "texto": "Preguntarle qué necesita y escucharlo",
+          "camino": "b"
+        },
+        {
+          "id": "c",
+          "emoji": "☁️",
+          "texto": "Animarlo: formar figuras divertidas en el cielo",
+          "camino": "c"
+        }
+      ]
+    },
+    "caminos": {
+      "a": {
+        "titulo": "La amabilidad que cuida",
+        "emoji": "💧",
+        "secciones": [
+          {
+            "n": 6,
+            "titulo": "Gotas y sombra",
+            "texto": "Nube dejó caer unas gotitas frescas sobre la rama y se estiró para hacer sombra. Piri bebió un poquito y respiró hondo.\n\nPero al rato empezó a tiritar: sus plumas estaban mojadas y el aire se había enfriado.\n\n—Uy —dijo Nube—. Quise cuidarte y casi te enfrío."
+          },
+          {
+            "n": 7,
+            "titulo": "Corregir también es amable",
+            "texto": "Nube no fingió que todo había salido bien. Se movió despacio hacia un lado hasta dejar pasar los últimos rayos del sol, que secaron poco a poco las plumas de Piri.\n\n—Gracias por probar otra vez —dijo Piri, ya más tranquilo."
+          },
+          {
+            "n": 8,
+            "titulo": "El camino a casa",
+            "texto": "Con el calorcito, Piri recordó que su nido estaba junto a un roble de hojas rojas. Nube lo acompañó dando sombra o luz según hiciera falta, hasta que su familia lo recibió con alegría.\n\nNube comprendió que ser amable es cuidar, y que cuidar bien incluye fijarse en cómo se siente el otro y corregir cuando nos equivocamos."
+          }
+        ]
+      },
+      "b": {
+        "titulo": "La amabilidad que escucha",
+        "emoji": "👂",
+        "secciones": [
+          {
+            "n": 6,
+            "titulo": "Una pregunta suave",
+            "texto": "Nube se acercó despacito y se quedó a su lado, sin apurarlo.\n\n—Piri, ¿qué necesitas ahora?\n\nPiri tardó en contestar. Al fin dijo, bajito:\n\n—Tengo miedo de que se haga de noche y no encuentre mi nido."
+          },
+          {
+            "n": 7,
+            "titulo": "Escuchar toma tiempo",
+            "texto": "Nube no dijo «no pasa nada» ni cambió de tema. Escuchó cómo Piri describía su nido: estaba junto a un roble de hojas rojas, con una piedra blanca en la entrada.\n\n—Con esas pistas podemos buscarlo —dijo Nube—. Pero tendremos que ir despacio.\n\nPiri asintió. Ya no se sentía solo."
+          },
+          {
+            "n": 8,
+            "titulo": "Pistas para volver",
+            "texto": "Nube se deslizó bajito y Piri la siguió de rama en rama, hasta que apareció el roble de hojas rojas. ¡Allí estaban la piedra blanca y su familia!\n\nTardaron más que si hubieran ido corriendo, pero Piri llegó tranquilo.\n\nNube comprendió que preguntar y escuchar también es ser amable: a veces la mejor ayuda es la que el otro nos dice que necesita."
+          }
+        ]
+      },
+      "c": {
+        "titulo": "La amabilidad que anima",
+        "emoji": "☁️",
+        "secciones": [
+          {
+            "n": 6,
+            "titulo": "Un conejo en el cielo",
+            "texto": "Nube se estiró y se encogió hasta parecer un conejo de algodón. Luego se hizo barco y después un enorme sombrero.\n\nPiri abrió el pico, sorprendido, y por fin soltó una risita.\n\n—¡Eres muy graciosa! —dijo."
+          },
+          {
+            "n": 7,
+            "titulo": "Cuando llega la calma",
+            "texto": "Con la risa, las alitas de Piri se aflojaron y respiró más tranquilo. Entonces pudo hablar:\n\n—Estaba muy asustado. Mi nido está junto a un roble de hojas rojas, pero no sé cómo llegar.\n\nNube dejó de hacer figuras. Ahora tocaba escuchar, y lo hizo con atención."
+          },
+          {
+            "n": 8,
+            "titulo": "Una nube con forma de flecha",
+            "texto": "Nube se estiró hasta formar una flecha blanca que señalaba el camino. Piri la siguió de rama en rama hasta el roble de hojas rojas, donde su familia lo esperaba.\n\n—Gracias por hacerme reír —dijo Piri.\n\nNube comprendió que alegrar a alguien es un regalo, y que se vuelve aún más valioso cuando también escuchamos lo que el otro necesita."
+          }
+        ]
+      }
+    },
+    "quiz": {
+      "comunes": [
+        {
+          "tipo": "comprension",
+          "pregunta": "¿Qué quería realmente la margarita pequeñita?",
+          "opciones": [
+            "Compañía",
+            "Más agua",
+            "Que Nube se fuera"
+          ],
+          "respuesta": 0
+        },
+        {
+          "tipo": "inferencia",
+          "pregunta": "¿Qué aprendió Nube al mirar con atención?",
+          "opciones": [
+            "Que cada quien puede necesitar algo distinto",
+            "Que todas las plantas necesitan lo mismo",
+            "Que era mejor no saludar"
+          ],
+          "respuesta": 0
+        }
+      ],
+      "porCamino": {
+        "a": [
+          {
+            "tipo": "comprension",
+            "pregunta": "¿Qué pasó después de que Nube dejó caer gotas sobre Piri?",
+            "opciones": [
+              "Piri empezó a tiritar de frío",
+              "Piri se quedó dormido",
+              "Piri salió volando"
+            ],
+            "respuesta": 0
+          },
+          {
+            "tipo": "inferencia",
+            "pregunta": "¿Por qué dijo Nube «casi te enfrío»?",
+            "opciones": [
+              "Porque reconoció que su ayuda no había sido la mejor y quiso corregirla",
+              "Porque quería que Piri se enfadara",
+              "Porque no le importaba"
+            ],
+            "respuesta": 0
+          }
+        ],
+        "b": [
+          {
+            "tipo": "comprension",
+            "pregunta": "¿Qué le dijo Piri a Nube cuando por fin habló?",
+            "opciones": [
+              "Que tenía miedo de que se hiciera de noche",
+              "Que quería jugar",
+              "Que tenía hambre"
+            ],
+            "respuesta": 0
+          },
+          {
+            "tipo": "inferencia",
+            "pregunta": "¿Por qué fue útil preguntarle a Piri?",
+            "opciones": [
+              "Porque así supo qué necesitaba de verdad y tuvo pistas para llegar a su nido",
+              "Porque Piri sabía volar solo",
+              "Porque ya era de noche"
+            ],
+            "respuesta": 0
+          }
+        ],
+        "c": [
+          {
+            "tipo": "comprension",
+            "pregunta": "¿Qué formas hizo Nube para animar a Piri?",
+            "opciones": [
+              "Un conejo, un barco y un sombrero",
+              "Un lobo y una montaña",
+              "Una casa y un río"
+            ],
+            "respuesta": 0
+          },
+          {
+            "tipo": "inferencia",
+            "pregunta": "¿Por qué dejó Nube de hacer figuras cuando Piri empezó a hablar?",
+            "opciones": [
+              "Porque ahora era momento de escuchar",
+              "Porque se quedó sin ideas",
+              "Porque se cansó"
+            ],
+            "respuesta": 0
+          }
+        ]
+      },
+      "reflexion": {
+        "porCamino": {
+          "a": {
+            "preguntas": [
+              {
+                "tipo": "reflexion",
+                "pregunta": "Elegiste que Nube cuidara a Piri. ¿Por qué lo elegiste?",
+                "opciones": [
+                  "Porque Piri parecía necesitar descanso",
+                  "Porque a mí me gusta que me cuiden así",
+                  "Porque era lo más rápido"
+                ],
+                "respuesta": null
+              },
+              {
+                "tipo": "reflexion",
+                "pregunta": "Nube se equivocó al principio y lo corrigió. ¿Qué piensas de eso?",
+                "opciones": [
+                  "Equivocarse y corregir también es ser amable",
+                  "Habría sido mejor no equivocarse",
+                  "No sé, tengo que pensarlo"
+                ],
+                "respuesta": null
+              }
+            ],
+            "mensajeFinal": "Elegiste la amabilidad que cuida. Fíjate siempre en cómo reacciona el otro: así sabrás si tu ayuda le sirve."
+          },
+          "b": {
+            "preguntas": [
+              {
+                "tipo": "reflexion",
+                "pregunta": "Elegiste que Nube preguntara. ¿Por qué lo elegiste?",
+                "opciones": [
+                  "Porque creo que hay que saber qué necesita el otro",
+                  "Porque Piri parecía asustado",
+                  "Porque a mí me gusta que me pregunten"
+                ],
+                "respuesta": null
+              },
+              {
+                "tipo": "reflexion",
+                "pregunta": "Escuchar tomó más tiempo que salir corriendo. ¿Valió la pena?",
+                "opciones": [
+                  "Sí, porque Piri llegó tranquilo",
+                  "Depende de cuánta prisa haya",
+                  "No estoy seguro"
+                ],
+                "respuesta": null
+              }
+            ],
+            "mensajeFinal": "Elegiste la amabilidad que escucha. Preguntar y escuchar nos dice lo que el otro necesita de verdad."
+          },
+          "c": {
+            "preguntas": [
+              {
+                "tipo": "reflexion",
+                "pregunta": "Elegiste que Nube animara a Piri. ¿Por qué lo elegiste?",
+                "opciones": [
+                  "Porque la risa calma",
+                  "Porque me pareció más divertido",
+                  "Porque yo haría eso por un amigo"
+                ],
+                "respuesta": null
+              },
+              {
+                "tipo": "reflexion",
+                "pregunta": "Después de reír, Piri pudo hablar. ¿Por qué crees que pasó?",
+                "opciones": [
+                  "Porque la risa lo ayudó a sentirse seguro",
+                  "Porque se aburrió de estar callado",
+                  "No lo sé"
+                ],
+                "respuesta": null
+              }
+            ],
+            "mensajeFinal": "Elegiste la amabilidad que anima. Alegrar a alguien es un regalo, y es aún mejor cuando también lo escuchamos."
+          }
+        },
+        "comun": {
+          "tipo": "abierta",
+          "pregunta": "¿Cuándo alguien fue amable contigo justo de la manera que necesitabas? ¿Qué hizo?",
+          "sugerencia": "Puedes contárselo a alguien de tu familia o dibujarlo."
+        }
+      }
+    }
   },
   {
-    "id":"el-leon-valiente","titulo":"El león valiente","valor":"Valentía","emoji":"🦁",
-    "autor":"Equipo Mis Cuentos","fuente":"Cuento original creado para esta aplicación","licencia":"Uso educativo",
-    "paginas":[
-      "Leo era un leoncito que tenía un poco de miedo de explorar la selva.",
-      "Una mañana escuchó a un conejo pedir ayuda cerca del río.",
-      "Aunque sentía nervios, Leo respiró profundo y caminó hacia él.",
-      "Al cruzar el sendero oscuro, ayudó al conejo a volver a su casa.",
-      "Sus amigos celebraron su valentía y le dieron las gracias.",
-      "Leo aprendió que ser valiente no es no tener miedo, sino ayudar a pesar de él.",
-      "Esa experiencia le enseñó a escuchar, pensar una ruta y pedir apoyo cuando fuese necesario.",
-      "Cuando volvió a casa, supo que una decisión valiente combina coraje, cuidado y confianza."
+    "id": "el-leon-valiente",
+    "titulo": "El león valiente",
+    "valor": "Valentía",
+    "emoji": "🦁",
+    "edad": "6-10",
+    "autor": "Equipo Mis Cuentos",
+    "fuente": "Cuento original creado para esta aplicación",
+    "licencia": "Uso educativo",
+    "secciones": [
+      {
+        "n": 1,
+        "titulo": "El rincón favorito",
+        "texto": "Leo era un leoncito curioso que vivía en lo más verde de la selva. Su lugar favorito era un claro tranquilo, donde se sentaba a escuchar: el zumbido de las abejas, el crujir de las hojas y el canto lejano del río.\n\nLo que más deseaba era explorar el sendero del río. Pero cada vez que pensaba en alejarse, sentía mariposas en la barriga."
+      },
+      {
+        "n": 2,
+        "titulo": "El truco del león",
+        "texto": "Su hermana mayor, Lía, lo notó una tarde.\n\n—¿Otra vez mirando el sendero? —sonrió.\n—Me da un poquito de miedo —admitió Leo.\n—A todos nos pasa a veces. Te enseño el truco del león: respira hondo, como si olieras una flor, y sopla despacio, como si apagaras una vela.\n\nLeo lo probó tres veces. Las mariposas de su barriga se calmaron un poquito."
+      },
+      {
+        "n": 3,
+        "titulo": "Un llanto junto al río",
+        "texto": "Una mañana, Leo oyó un sonido distinto: un llanto pequeñito que venía del río. Se asomó con cuidado y vio a un conejo escondido bajo un helecho.\n\n—Me llamo Tito —dijo, sorbiéndose la nariz—. Me separé de mi familia y ya no sé cómo volver.\n\nLeo quiso ayudarlo enseguida, pero sus patas no se movían."
+      },
+      {
+        "n": 4,
+        "titulo": "Sombras y agua fuerte",
+        "texto": "Más allá del claro, el sendero estaba lleno de sombras largas. El agua sonaba fuerte, ¡chuaaas!, y el cielo empezaba a ponerse gris.\n\n—Tengo miedo de equivocarme —confesó Leo.\n—Yo también tengo miedo —dijo Tito—. Pero no quiero quedarme solo.\n\nLeo entendió algo importante: sentir miedo no era el problema. El problema era quedarse quieto mientras alguien lo necesitaba. Respiró como le había enseñado Lía. Una vez… dos veces… tres veces."
+      },
+      {
+        "n": 5,
+        "titulo": "¿Qué hará Leo?",
+        "texto": "Leo miró hacia adelante. Había tres formas de empezar, y las tres daban un poquito de miedo.\n\nPodía correr a buscar a Lía y a sus amigos para volver todos juntos. Podía caminar al lado de Tito, paso a paso, siguiendo la orilla del río. O podía subir a la roca grande y usar su voz para que la familia de Tito los escuchara.\n\nLa tormenta se acercaba. Había que decidir."
+      }
     ],
-    "quiz":[
-      {"pregunta":"¿Qué le daba miedo a Leo?","opciones":["Explorar la selva","Comer frutas","Dormir"],"respuesta":0},
-      {"pregunta":"¿A quién ayudó Leo?","opciones":["A una mariposa","A un conejo","A una nube"],"respuesta":1},
-      {"pregunta":"¿Qué significa ser valiente?","opciones":["Ayudar aunque tengas miedo","No sentir nunca miedo","No salir de casa"],"respuesta":0}
-    ]
+    "decision": {
+      "pregunta": "¿Cómo crees que Leo puede ser valiente ahora?",
+      "opciones": [
+        {
+          "id": "a",
+          "emoji": "🤝",
+          "texto": "Pedir ayuda: ir a buscar a Lía y a los amigos",
+          "camino": "a"
+        },
+        {
+          "id": "b",
+          "emoji": "👣",
+          "texto": "Ir paso a paso: caminar junto a Tito por la orilla",
+          "camino": "b"
+        },
+        {
+          "id": "c",
+          "emoji": "📣",
+          "texto": "Usar su voz: subir a la roca y rugir",
+          "camino": "c"
+        }
+      ]
+    },
+    "caminos": {
+      "a": {
+        "titulo": "La valentía de pedir ayuda",
+        "emoji": "🤝",
+        "secciones": [
+          {
+            "n": 6,
+            "titulo": "Vuelvo enseguida",
+            "texto": "—No tienes que esperar solo —le dijo Leo a Tito—. Quédate bajo el helecho y cuéntate una canción. Vuelvo enseguida.\n\nLeo corrió de regreso por el claro hasta encontrar a Lía, que acomodaba su cama de hojas.\n\n—¡Tito se perdió y yo no conozco el camino! —dijo, sin aliento.\n—Hiciste bien en venir —respondió Lía—. Pedir ayuda también es de valientes. Vamos."
+          },
+          {
+            "n": 7,
+            "titulo": "Cada uno aporta algo",
+            "texto": "Por el camino se les unió Doña Tula, la tortuga, que conocía cada piedra del río.\n\n—Las madrigueras de los conejos están cerca del sauce grande —dijo.\n\nPero el sendero se dividía en dos y empezó a llover fuerte. Leo dudó.\n\n—¿Y si me equivoco otra vez?\n—Entre todos lo revisamos —dijo Tula—. Tú miras el suelo, Lía huele el aire y yo recuerdo el camino."
+          },
+          {
+            "n": 8,
+            "titulo": "Juntos y empapados",
+            "texto": "Recogieron a Tito, que seguía cantando bajito bajo su helecho, y juntos llegaron al sauce grande. Allí esperaba su familia, muy preocupada.\n\nLlegaron un poco tarde y completamente empapados, pero todos juntos.\n\nLeo comprendió que ser valiente no es hacerlo todo solo. A veces la valentía suena así: «Necesito ayuda». Y esas palabras pueden ser el primer paso de un camino seguro."
+          }
+        ]
+      },
+      "b": {
+        "titulo": "La valentía de ir paso a paso",
+        "emoji": "👣",
+        "secciones": [
+          {
+            "n": 6,
+            "titulo": "Un paso, y otro",
+            "texto": "Leo respiró hondo y dio un primer paso. Luego, otro.\n\n—Vamos por la orilla —dijo—, donde la tierra está firme.\n\nTito caminaba pegadito a su lado. Cada vez que el agua rugía, ¡chuaaas!, Leo contaba hasta tres y respiraba. Una, dos, tres. Y seguían avanzando."
+          },
+          {
+            "n": 7,
+            "titulo": "Huellas en el barro",
+            "texto": "A mitad del camino encontraron huellas pequeñas de conejo en el barro.\n\n—¡Son de mi familia! —exclamó Tito.\n\nLas huellas seguían al otro lado del arroyo, por unas piedras planas y poco profundas. A Leo le temblaron las patas. Probó la primera piedra, esperó, probó la segunda. Tito iba detrás, sujeto a su cola, y juntos cruzaron sin prisa."
+          },
+          {
+            "n": 8,
+            "titulo": "Un camino pequeñito",
+            "texto": "Entre los arbustos asomaron unas orejas largas. ¡Era la familia de Tito! Su mamá lo abrazó fuerte.\n\n—¿Cómo lograron llegar hasta aquí? —preguntó.\n—Un paso a la vez —respondió Leo, con las patas mojadas y una sonrisa enorme.\n\nLeo descubrió que un camino que da miedo se vuelve más pequeño cuando lo partimos en pasos. Y que confiar en uno mismo también es una forma de valentía."
+          }
+        ]
+      },
+      "c": {
+        "titulo": "La valentía de usar la voz",
+        "emoji": "📣",
+        "secciones": [
+          {
+            "n": 6,
+            "titulo": "Un rugido chiquito",
+            "texto": "Leo trepó a la roca grande, con Tito sentado a salvo a su lado. Respiró hondo, abrió la boca y… ¡miau!\n\nSalió un rugidito chiquito, como de gatito. Tito se tapó la boca para no reírse. Leo también soltó una risita, y la risa le quitó un poco de miedo."
+          },
+          {
+            "n": 7,
+            "titulo": "Pum, pum, pum",
+            "texto": "—Otra vez —dijo Tito—. Yo te ayudo.\n\nY Tito golpeó el suelo con sus patas traseras: ¡pum, pum, pum!, el aviso de los conejos. Leo cerró los ojos, respiró como le había enseñado Lía y rugió de nuevo.\n\n¡GRRROAAAR! Su voz rodó por toda la selva. Los pájaros alzaron el vuelo y, por un momento, hasta el río pareció escuchar."
+          },
+          {
+            "n": 8,
+            "titulo": "La respuesta del eco",
+            "texto": "Desde lejos llegó una respuesta: ¡pum, pum, pum! La familia de Tito corría siguiendo el eco. También llegaron algunos animales curiosos.\n\n—¿Fuiste tú, Leo? —preguntó un monito.\n—Sí —dijo Leo, un poco sonrojado.\n\nLeo comprendió que su voz, que creía pequeñita, podía llamar a otros y dar esperanza. A veces ser valiente es hablar fuerte, aunque la voz todavía tiemble."
+          }
+        ]
+      }
+    },
+    "quiz": {
+      "comunes": [
+        {
+          "tipo": "comprension",
+          "pregunta": "¿Para qué sirve el truco del león que le enseñó Lía?",
+          "opciones": [
+            "Para calmarse cuando siente miedo",
+            "Para correr más rápido",
+            "Para hablar con el río"
+          ],
+          "respuesta": 0
+        },
+        {
+          "tipo": "inferencia",
+          "pregunta": "Leo entendió que «sentir miedo no era el problema». ¿Qué crees que quiere decir?",
+          "opciones": [
+            "Que se puede sentir miedo y aun así ayudar a alguien",
+            "Que el miedo desaparece cuando alguien nos necesita",
+            "Que si tenemos miedo es mejor no hacer nada"
+          ],
+          "respuesta": 0
+        }
+      ],
+      "porCamino": {
+        "a": [
+          {
+            "tipo": "comprension",
+            "pregunta": "¿Quiénes ayudaron a Leo a encontrar el camino hacia el sauce grande?",
+            "opciones": [
+              "Lía y Doña Tula",
+              "Un monito y un pájaro",
+              "Nadie, lo hizo solo"
+            ],
+            "respuesta": 0
+          },
+          {
+            "tipo": "inferencia",
+            "pregunta": "¿Por qué dice Lía que pedir ayuda también es de valientes?",
+            "opciones": [
+              "Porque hay que reconocer lo que no sabemos y confiar en otros",
+              "Porque es lo más fácil de hacer",
+              "Porque los valientes nunca tienen miedo"
+            ],
+            "respuesta": 0
+          }
+        ],
+        "b": [
+          {
+            "tipo": "comprension",
+            "pregunta": "¿Qué hacía Leo cada vez que el agua rugía fuerte?",
+            "opciones": [
+              "Contaba hasta tres y respiraba",
+              "Cerraba los ojos y corría",
+              "Se escondía detrás de Tito"
+            ],
+            "respuesta": 0
+          },
+          {
+            "tipo": "inferencia",
+            "pregunta": "¿Por qué crees que ir paso a paso ayudó a Leo?",
+            "opciones": [
+              "Porque un camino grande se vuelve más fácil cuando lo hacemos en partes pequeñas",
+              "Porque el camino era muy corto",
+              "Porque Tito caminaba más rápido que él"
+            ],
+            "respuesta": 0
+          }
+        ],
+        "c": [
+          {
+            "tipo": "comprension",
+            "pregunta": "¿Cómo salió el primer rugido de Leo?",
+            "opciones": [
+              "Chiquito, como un miau",
+              "Tan fuerte que asustó a toda la selva",
+              "No salió ningún sonido"
+            ],
+            "respuesta": 0
+          },
+          {
+            "tipo": "inferencia",
+            "pregunta": "¿Cómo supo la familia de Tito dónde estaban ellos?",
+            "opciones": [
+              "Siguieron el eco del rugido y los golpes de Tito",
+              "Vieron humo en el cielo",
+              "Un pájaro les avisó"
+            ],
+            "respuesta": 0
+          }
+        ]
+      },
+      "reflexion": {
+        "porCamino": {
+          "a": {
+            "preguntas": [
+              {
+                "tipo": "reflexion",
+                "pregunta": "Elegiste que Leo pidiera ayuda. ¿Por qué elegiste ese camino?",
+                "opciones": [
+                  "Porque me pareció lo más seguro",
+                  "Porque creo que juntos todo es más fácil",
+                  "Porque yo haría eso en su lugar"
+                ],
+                "respuesta": null
+              },
+              {
+                "tipo": "reflexion",
+                "pregunta": "Leo y sus amigos llegaron tarde y empapados. Si hubiera elegido otro camino, ¿qué crees que habría cambiado?",
+                "opciones": [
+                  "Habría llegado antes, pero quizás con más miedo",
+                  "Habría descubierto cuánto puede hacer por sí mismo",
+                  "No habría cambiado nada importante"
+                ],
+                "respuesta": null
+              }
+            ],
+            "mensajeFinal": "Elegiste el camino de quien sabe pedir ayuda. Muchas veces, ser valiente es darse cuenta de que no tenemos que hacerlo todo solos."
+          },
+          "b": {
+            "preguntas": [
+              {
+                "tipo": "reflexion",
+                "pregunta": "Elegiste que Leo fuera paso a paso. ¿Por qué elegiste ese camino?",
+                "opciones": [
+                  "Porque me gusta ir con calma",
+                  "Porque creo que Leo podía lograrlo por sí mismo",
+                  "Porque no quería que Tito se quedara solo"
+                ],
+                "respuesta": null
+              },
+              {
+                "tipo": "reflexion",
+                "pregunta": "Leo tuvo que cruzar el arroyo con las patas temblando. Si hubiera elegido otro camino, ¿qué crees que habría cambiado?",
+                "opciones": [
+                  "No habría tenido que cruzar, pero habría necesitado a otros",
+                  "Habría sido más rápido, pero con menos calma",
+                  "No habría cambiado nada importante"
+                ],
+                "respuesta": null
+              }
+            ],
+            "mensajeFinal": "Elegiste el camino de la calma. Un paso pequeño, repetido muchas veces, puede llevarnos muy lejos."
+          },
+          "c": {
+            "preguntas": [
+              {
+                "tipo": "reflexion",
+                "pregunta": "Elegiste que Leo usara su voz. ¿Por qué elegiste ese camino?",
+                "opciones": [
+                  "Porque me pareció emocionante",
+                  "Porque creo que hacerse escuchar ayuda a otros",
+                  "Porque yo también quisiera ser más valiente al hablar"
+                ],
+                "respuesta": null
+              },
+              {
+                "tipo": "reflexion",
+                "pregunta": "El primer rugido de Leo salió como un miau. Si hubiera elegido otro camino, ¿qué crees que habría cambiado?",
+                "opciones": [
+                  "No habría descubierto lo fuerte que es su voz",
+                  "Habría sentido menos vergüenza, pero habría tardado más",
+                  "No habría cambiado nada importante"
+                ],
+                "respuesta": null
+              }
+            ],
+            "mensajeFinal": "Elegiste el camino de la voz. Aunque tiemble al principio, hablar puede llamar ayuda y dar esperanza a otros."
+          }
+        },
+        "comun": {
+          "tipo": "abierta",
+          "pregunta": "¿Recuerdas alguna vez en que sentiste miedo, pero aun así hiciste algo importante? ¿Qué te ayudó?",
+          "sugerencia": "Puedes contárselo a alguien de tu familia o dibujarlo."
+        }
+      }
+    }
   },
   {
-    "id":"los-amigos-del-bosque","titulo":"Los amigos del bosque","valor":"Amistad","emoji":"🌳",
-    "autor":"Equipo Mis Cuentos","fuente":"Cuento original creado para esta aplicación","licencia":"Uso educativo",
-    "paginas":[
-      "En el bosque vivían animales que jugaban juntos todos los días.",
-      "Pero un día, una tormenta derribó el puente de madera.",
-      "Cada uno quiso ayudar a los demás a cruzar el río.",
-      "La ardilla encontró ramas, el conejo recogió hojas y el ciervo tomó la cuerda.",
-      "Entre todos construyeron un puente nuevo y seguro.",
-      "Desde entonces entendieron que la amistad hace posible lo que parece difícil.",
-      "También hicieron un plan para revisar el puente y cuidarlo durante futuras lluvias.",
-      "Al trabajar con paciencia y repartir las tareas, descubrieron una forma de cuidar al bosque y de cuidarse entre todos."
+    "id": "los-amigos-del-bosque",
+    "titulo": "Los amigos del bosque",
+    "valor": "Amistad",
+    "emoji": "🌳",
+    "edad": "6-10",
+    "autor": "Equipo Mis Cuentos",
+    "fuente": "Cuento original creado para esta aplicación",
+    "licencia": "Uso educativo",
+    "secciones": [
+      {
+        "n": 1,
+        "titulo": "Tres amigos distintos",
+        "texto": "En un bosque lleno de robles vivían tres amigos: Nuez, la ardilla, que trepaba como el viento; Trébol, el conejo, que sabía cavar y esconderse; y Rama, el ciervo, alto y tranquilo.\n\nSe reunían cada tarde a jugar y a contarse lo que habían descubierto."
+      },
+      {
+        "n": 2,
+        "titulo": "Cada uno con su don",
+        "texto": "—Yo veo lo que pasa desde las ramas altas —presumía Nuez.\n—Yo sé dónde la tierra es blanda —decía Trébol.\n—Y yo llego a los frutos más altos —sonreía Rama.\n\nA veces competían por ver quién era mejor, pero siempre terminaban riendo y jugando juntos otra vez."
+      },
+      {
+        "n": 3,
+        "titulo": "La tormenta",
+        "texto": "Una noche llegó una tormenta enorme. Llovió tanto que el río creció y creció. Por la mañana, los tres amigos descubrieron que el puente de madera se había roto.\n\nEn la otra orilla, unos animales esperaban para volver a casa."
+      },
+      {
+        "n": 4,
+        "titulo": "Tres ideas, tres voces",
+        "texto": "—¡Hay que arreglar el puente ya! —dijo Nuez.\n—¡Mejor busquemos otro lugar para cruzar! —dijo Trébol.\n—¡Esperemos a que baje el agua! —dijo Rama.\n\nTodos hablaron a la vez, cada vez más fuerte. Trébol se puso triste porque nadie lo escuchaba y se alejó unos pasos. Los tres se quedaron en silencio. Esto no estaba saliendo bien."
+      },
+      {
+        "n": 5,
+        "titulo": "¿Qué plan eligen?",
+        "texto": "Rama respiró hondo.\n\n—Perdón por gritar. Escuchemos cada idea con calma.\n\nNuez quería reparar el puente con ramas y hojas. Trébol conocía un cruce de piedras río arriba. Rama proponía esperar y mandar mensajes y comida a la otra orilla con una cuerda tendida y una canasta.\n\nLos tres amigos se miraron: tenían que elegir un plan, y todos querían ayudar."
+      }
     ],
-    "quiz":[
-      {"pregunta":"¿Qué derribó la tormenta?","opciones":["Un árbol mágico","El puente de madera","La casa del ciervo"],"respuesta":1},
-      {"pregunta":"¿Cómo ayudaron los animales?","opciones":["Cada uno hizo una parte","Se quedaron sin hacer nada","Corrieron lejos"],"respuesta":0},
-      {"pregunta":"¿Qué hace posible la amistad?","opciones":["Lo imposible parece difícil","Lo difícil puede ser posible","Que nadie ayude"],"respuesta":1}
-    ]
+    "decision": {
+      "pregunta": "¿Qué plan crees que deben elegir los amigos?",
+      "opciones": [
+        {
+          "id": "a",
+          "emoji": "🌉",
+          "texto": "Reparar el puente con ramas y hojas (idea de Nuez)",
+          "camino": "a"
+        },
+        {
+          "id": "b",
+          "emoji": "🪨",
+          "texto": "Cruzar por las piedras río arriba (idea de Trébol)",
+          "camino": "b"
+        },
+        {
+          "id": "c",
+          "emoji": "🧺",
+          "texto": "Esperar y mandar mensajes y comida con una cuerda (idea de Rama)",
+          "camino": "c"
+        }
+      ]
+    },
+    "caminos": {
+      "a": {
+        "titulo": "Construir juntos",
+        "emoji": "🌉",
+        "secciones": [
+          {
+            "n": 6,
+            "titulo": "Ramas y hojas",
+            "texto": "Nuez trepó a buscar ramas resistentes y Trébol cavó para clavarlas firmes en la orilla. Rama las sostenía en su lugar con su fuerza. Poco a poco el puente empezó a tomar forma.\n\nPero Trébol notó algo:\n\n—Si cruzamos ahora, quizá no aguante. ¡Hay que probarlo primero!"
+          },
+          {
+            "n": 7,
+            "titulo": "Probar antes de cruzar",
+            "texto": "Los tres probaron el puente con piedras pesadas. Una rama crujió.\n\n—Gracias por avisar, Trébol —dijo Nuez—. Yo solo pensaba en apurarme.\n\nReforzaron esa parte con hojas y ramas nuevas. Esta vez, el puente no se movió."
+          },
+          {
+            "n": 8,
+            "titulo": "Un puente de todos",
+            "texto": "Los animales de la otra orilla cruzaron uno por uno y llegaron con sus familias. Los tres amigos estaban cansados, pero sonreían.\n\n—Sin Trébol, el puente no habría sido seguro —dijo Nuez.\n\nDescubrieron que la amistad es mezclar los dones de cada uno, y que a veces necesitamos al amigo que frena para llegar mejor."
+          }
+        ]
+      },
+      "b": {
+        "titulo": "Compartir las ideas",
+        "emoji": "🪨",
+        "secciones": [
+          {
+            "n": 6,
+            "titulo": "El cruce secreto",
+            "texto": "Trébol guió a sus amigos río arriba, donde el agua corría más baja entre piedras planas. Rama, con sus largas patas, probaba cada piedra; Nuez vigilaba desde un árbol que nadie resbalara.\n\n—Es un buen cruce —dijo Rama—, pero no todos los animales podrán usarlo."
+          },
+          {
+            "n": 7,
+            "titulo": "Un cruce para todos",
+            "texto": "En la otra orilla esperaban un osezno pequeño y una anciana tortuga. Las piedras estaban demasiado lejos entre sí para ellos.\n\nNuez se rascó la cabeza.\n\n—¿Y si ponemos ramas planas entre las piedras para acortar los saltos?\n\nTrébol sonrió: él había encontrado el cruce, y Nuez, la forma de mejorarlo."
+          },
+          {
+            "n": 8,
+            "titulo": "Piedra a piedra",
+            "texto": "Con las ramas puestas entre las piedras, el osezno y la tortuga cruzaron con ayuda, uno a la vez, mientras Rama los sostenía con calma. Todos llegaron a casa.\n\n—Fue idea de todos —dijo Trébol.\n\nLos amigos aprendieron que una buena idea mejora cuando otros ayudan a pulirla, y que no importa de quién fue cuando lo que cuenta es lo que lograron juntos."
+          }
+        ]
+      },
+      "c": {
+        "titulo": "Acompañar y esperar",
+        "emoji": "🧺",
+        "secciones": [
+          {
+            "n": 6,
+            "titulo": "Un puente de cuerda",
+            "texto": "Rama propuso tender una cuerda fuerte de una orilla a otra y colgar una canasta para enviar cosas. Nuez la llevó trepando por los árboles. Trébol la ató a una raíz firme.\n\nEn la canasta mandaron mensajes de ánimo, bayas y hojas secas para abrigarse."
+          },
+          {
+            "n": 7,
+            "titulo": "Esperar también es hacer",
+            "texto": "Desde la otra orilla llegó otro mensaje: «Estamos bien. Gracias por no olvidarnos».\n\nNuez se impacientaba:\n\n—¡Estamos esperando sin hacer nada!\n—No es nada —dijo Rama—. Los estamos cuidando mientras el río baja.\n\nNuez entendió, y se ofreció a preparar la canasta cada hora."
+          },
+          {
+            "n": 8,
+            "titulo": "Cuando el río bajó",
+            "texto": "Al caer la tarde el agua bajó, y los animales de la otra orilla cruzaron por la orilla que volvió a quedar firme, con ayuda de los tres amigos. Nadie corrió riesgos.\n\nNuez le dio las gracias a Rama:\n\n—Esperar fue difícil, pero funcionó.\n\nLos amigos descubrieron que quedarse al lado de alguien, aunque no podamos resolverlo enseguida, también es una forma de amistad."
+          }
+        ]
+      }
+    },
+    "quiz": {
+      "comunes": [
+        {
+          "tipo": "comprension",
+          "pregunta": "¿Qué le pasó al puente?",
+          "opciones": [
+            "Se rompió con la tormenta",
+            "Se lo llevó un oso",
+            "Se quemó"
+          ],
+          "respuesta": 0
+        },
+        {
+          "tipo": "inferencia",
+          "pregunta": "¿Por qué se alejó Trébol cuando todos hablaban a la vez?",
+          "opciones": [
+            "Porque se sintió ignorado",
+            "Porque quería jugar solo",
+            "Porque estaba enfermo"
+          ],
+          "respuesta": 0
+        }
+      ],
+      "porCamino": {
+        "a": [
+          {
+            "tipo": "comprension",
+            "pregunta": "¿Qué propuso Trébol antes de cruzar el puente?",
+            "opciones": [
+              "Probarlo primero para ver si aguantaba",
+              "Cruzar corriendo",
+              "Quitar las ramas"
+            ],
+            "respuesta": 0
+          },
+          {
+            "tipo": "inferencia",
+            "pregunta": "¿Por qué le dio las gracias Nuez a Trébol?",
+            "opciones": [
+              "Porque su aviso hizo el puente más seguro",
+              "Porque Trébol cargó más ramas",
+              "Porque Trébol construyó todo solo"
+            ],
+            "respuesta": 0
+          }
+        ],
+        "b": [
+          {
+            "tipo": "comprension",
+            "pregunta": "¿Quiénes esperaban en la otra orilla y no podían cruzar solos?",
+            "opciones": [
+              "Un osezno y una tortuga",
+              "Dos conejos",
+              "Un lobo"
+            ],
+            "respuesta": 0
+          },
+          {
+            "tipo": "inferencia",
+            "pregunta": "¿Por qué dijo Trébol «fue idea de todos»?",
+            "opciones": [
+              "Porque el cruce mejoró gracias a lo que aportó cada uno",
+              "Porque no quería recibir crédito por nada",
+              "Porque Nuez se lo pidió"
+            ],
+            "respuesta": 0
+          }
+        ],
+        "c": [
+          {
+            "tipo": "comprension",
+            "pregunta": "¿Qué enviaron los amigos en la canasta?",
+            "opciones": [
+              "Mensajes, bayas y hojas secas",
+              "Piedras",
+              "Nada"
+            ],
+            "respuesta": 0
+          },
+          {
+            "tipo": "inferencia",
+            "pregunta": "¿Por qué dijo Rama que esperar «no es nada»?",
+            "opciones": [
+              "Porque cuidaban a los demás mientras bajaba el río",
+              "Porque no quería trabajar",
+              "Porque estaba cansado"
+            ],
+            "respuesta": 0
+          }
+        ]
+      },
+      "reflexion": {
+        "porCamino": {
+          "a": {
+            "preguntas": [
+              {
+                "tipo": "reflexion",
+                "pregunta": "Elegiste reparar el puente. ¿Por qué elegiste ese plan?",
+                "opciones": [
+                  "Porque me gusta construir cosas",
+                  "Porque quería resolver el problema pronto",
+                  "Porque me pareció el plan de todos"
+                ],
+                "respuesta": null
+              },
+              {
+                "tipo": "reflexion",
+                "pregunta": "A Nuez le costó escuchar a Trébol al principio. ¿Cómo crees que se sintió Trébol cuando Nuez le agradeció?",
+                "opciones": [
+                  "Valorado y escuchado",
+                  "Le dio igual",
+                  "No lo sé"
+                ],
+                "respuesta": null
+              }
+            ],
+            "mensajeFinal": "Elegiste construir juntos. Una amistad fuerte mezcla los talentos de todos y escucha al que avisa del peligro."
+          },
+          "b": {
+            "preguntas": [
+              {
+                "tipo": "reflexion",
+                "pregunta": "Elegiste el cruce de las piedras. ¿Por qué?",
+                "opciones": [
+                  "Porque Trébol se había sentido ignorado y quería valorar su idea",
+                  "Porque me pareció el plan más creativo",
+                  "Porque era el más rápido"
+                ],
+                "respuesta": null
+              },
+              {
+                "tipo": "reflexion",
+                "pregunta": "Entre todos mejoraron la idea de Trébol. ¿Qué piensas de eso?",
+                "opciones": [
+                  "Que juntos las ideas salen mejor",
+                  "Que con la idea de Trébol bastaba",
+                  "No estoy seguro"
+                ],
+                "respuesta": null
+              }
+            ],
+            "mensajeFinal": "Elegiste compartir las ideas. Una idea mejora cuando varios amigos aportan algo, sin importar de quién fue."
+          },
+          "c": {
+            "preguntas": [
+              {
+                "tipo": "reflexion",
+                "pregunta": "Elegiste esperar y mandar mensajes. ¿Por qué?",
+                "opciones": [
+                  "Porque pensé en la seguridad de todos",
+                  "Porque me gusta cuidar a otros",
+                  "Porque Rama es muy tranquilo"
+                ],
+                "respuesta": null
+              },
+              {
+                "tipo": "reflexion",
+                "pregunta": "Nuez se impacientó. ¿Qué crees que hizo que aceptara esperar?",
+                "opciones": [
+                  "Que Rama le explicó que esperar también ayuda",
+                  "Que se cansó de discutir",
+                  "No lo sé"
+                ],
+                "respuesta": null
+              }
+            ],
+            "mensajeFinal": "Elegiste acompañar y esperar. A veces estar presente y cuidar al otro es lo mejor que podemos hacer."
+          }
+        },
+        "comun": {
+          "tipo": "abierta",
+          "pregunta": "¿Alguna vez un amigo y tú pensaron distinto sobre algo? ¿Cómo lo resolvieron?",
+          "sugerencia": "Puedes contárselo a alguien de tu familia o dibujarlo."
+        }
+      }
+    }
   },
   {
-    "id":"la-semillita-curiosa","titulo":"La semillita curiosa","valor":"Curiosidad","emoji":"🌱",
-    "autor":"Equipo Mis Cuentos","fuente":"Cuento original creado para esta aplicación","licencia":"Uso educativo",
-    "paginas":[
-      "Una semillita viva bajo la tierra preguntaba qué había encima.",
-      "La lluvia la ayudó a crecer y sus hojas comenzaron a salir.",
-      "La curiosa semillita observaba a los insectos y escuchaba a los pájaros.",
-      "Le encantaba descubrir colores, sonidos y nuevos caminos.",
-      "Cuando se hizo una flor, seguía mirando el mundo con alegría.",
-      "Así aprendió que preguntar y explorar nos ayuda a descubrir cosas maravillosas.",
-      "Cada duda la llevó a probar una nueva forma de observar sin dañar lo que encontraba.",
-      "Al final, entendió que una buena pregunta abre caminos y que escuchar las respuestas puede conducir a un descubrimiento inesperado."
+    "id": "la-semillita-curiosa",
+    "titulo": "La semillita curiosa",
+    "valor": "Curiosidad",
+    "emoji": "🌱",
+    "edad": "6-10",
+    "autor": "Equipo Mis Cuentos",
+    "fuente": "Cuento original creado para esta aplicación",
+    "licencia": "Uso educativo",
+    "secciones": [
+      {
+        "n": 1,
+        "titulo": "Bajo la tierra",
+        "texto": "Bajo la tierra dormía una semillita llamada Pepita. Escuchaba sonidos apagados y sentía cómo el suelo cambiaba con cada estación.\n\n—¿Habrá colores allá arriba? —se preguntaba.\n\nSu mundo era oscuro y silencioso, pero sus preguntas hacían mucho ruido en su cabecita."
+      },
+      {
+        "n": 2,
+        "titulo": "Despertar",
+        "texto": "Cuando llegaron la lluvia y los días tibios, Pepita empezó a despertar. Estiró una raíz con cuidado, buscando la forma de crecer sin lastimar a las criaturas pequeñas del suelo.\n\n—Perdón, lombriz —dijo al rozar a una.\n—No hay problema —contestó ella—. Aquí abajo todos nos hacemos espacio."
+      },
+      {
+        "n": 3,
+        "titulo": "Un mundo nuevo",
+        "texto": "Al asomar sus primeras hojas, Pepita vio un mundo nuevo. Las hormigas caminaban en fila, un caracol dejaba un rastro brillante y los pájaros cantaban entre las ramas.\n\n—¡Cuánto hay por descubrir! —exclamó."
+      },
+      {
+        "n": 4,
+        "titulo": "El zumbido misterioso",
+        "texto": "Cada mañana, desde la esquina del jardín, llegaba un zumbido suave: ¡bzzz, bzzz!\n\nPepita no podía caminar hasta allí, porque sus raíces estaban bien sujetas a la tierra. Pero tenía muchas ganas de saber qué era. Se estiró tanto para mirar que una brisa casi la dobló.\n\n—Con calma —dijo un caracol que pasaba—. Hay muchas maneras de averiguar algo."
+      },
+      {
+        "n": 5,
+        "titulo": "¿Cómo averiguar?",
+        "texto": "Pepita pensó en tres maneras. Podía quedarse quietecita y observar todo un día, sin perder detalle. Podía preguntarles a quienes pasaban por allí: la hormiga, la mariposa, el caracol. O podía estirar con cuidado una de sus hojas hacia la esquina para sentir qué había.\n\nEl zumbido sonaba otra vez. ¿Qué haría?"
+      }
     ],
-    "quiz":[
-      {"pregunta":"¿Qué quería saber la semillita?","opciones":["Qué había encima","Cómo correr rápido","Dónde dormían las estrellas"],"respuesta":0},
-      {"pregunta":"¿Qué le ayudó a crecer?","opciones":["La arena seca","La lluvia","El viento fuerte"],"respuesta":1},
-      {"pregunta":"¿Qué nos ayuda a descubrir cosas nuevas?","opciones":["Preguntar y explorar","Quedarnos quietos","No mirar nada"],"respuesta":0}
-    ]
+    "decision": {
+      "pregunta": "¿Cómo crees que Pepita puede descubrir qué es el zumbido?",
+      "opciones": [
+        {
+          "id": "a",
+          "emoji": "👀",
+          "texto": "Observar todo el día sin perderse nada",
+          "camino": "a"
+        },
+        {
+          "id": "b",
+          "emoji": "🗣️",
+          "texto": "Preguntarles a los que pasan",
+          "camino": "b"
+        },
+        {
+          "id": "c",
+          "emoji": "🌿",
+          "texto": "Estirar una hoja hacia la esquina y probar",
+          "camino": "c"
+        }
+      ]
+    },
+    "caminos": {
+      "a": {
+        "titulo": "La curiosidad que observa",
+        "emoji": "👀",
+        "secciones": [
+          {
+            "n": 6,
+            "titulo": "Mirar con paciencia",
+            "texto": "Pepita se quedó quieta y miró. Por la mañana vio unas visitas pequeñas, con rayas amarillas y negras, que entraban y salían de un tronco hueco.\n\nAl mediodía, el sol estaba alto y no pasó nada interesante. Pepita se aburrió un poquito, pero siguió mirando."
+          },
+          {
+            "n": 7,
+            "titulo": "Una pista",
+            "texto": "Por la tarde notó algo: las visitas rayadas paraban en las flores vecinas y salían con las patitas llenas de polvo amarillo.\n\n—¡Van de flor en flor! —susurró Pepita—. Y siempre vuelven al tronco hueco.\n\nHabía descubierto un patrón, una pista que solo se ve si uno observa con paciencia."
+          },
+          {
+            "n": 8,
+            "titulo": "El secreto del zumbido",
+            "texto": "Al caer la tarde, el caracol pasó otra vez.\n\n—¿Averiguaste algo?\n—Creo que el zumbido viene de visitantes rayados que viven en el tronco y van de flor en flor.\n—Son las abejas —sonrió el caracol—. Descubriste mucho sin hacer una sola pregunta.\n\nPepita aprendió que observar con paciencia es una forma de descubrir, y que mirar con atención nos enseña lo que ni sabíamos buscar."
+          }
+        ]
+      },
+      "b": {
+        "titulo": "La curiosidad que pregunta",
+        "emoji": "🗣️",
+        "secciones": [
+          {
+            "n": 6,
+            "titulo": "Muchas respuestas",
+            "texto": "Pepita le preguntó a la primera hormiga que pasó.\n\n—¿Qué es ese zumbido?\n—¡Peligro! —dijo la hormiga, sin parar—. ¡No te acerques!\n\nPero entonces llegó una mariposa.\n\n—¡Son mis amigas las abejas! —dijo, riendo—. Hacen miel, ¡mmm!"
+          },
+          {
+            "n": 7,
+            "titulo": "¿A quién creer?",
+            "texto": "Pepita se quedó confundida. Una decía «peligro» y la otra «amigas». Entonces recordó lo que hacen los curiosos: preguntar más.\n\n—¿Por qué dices que es peligro? —le gritó a la hormiga.\n—Porque pican si te acercas a su casa —respondió—. Pero solo si las molestas."
+          },
+          {
+            "n": 8,
+            "titulo": "Las dos tenían razón",
+            "texto": "Pepita comprendió: las abejas eran amigas de las flores, pero merecían respeto y distancia en su casa. Las dos respuestas tenían una parte de verdad.\n\n—Hacer preguntas es genial —sonrió el caracol—, pero preguntarle a varios es aún mejor.\n\nPepita aprendió que preguntar abre puertas, y que comparar respuestas nos ayuda a entender mejor las cosas."
+          }
+        ]
+      },
+      "c": {
+        "titulo": "La curiosidad que prueba",
+        "emoji": "🌿",
+        "secciones": [
+          {
+            "n": 6,
+            "titulo": "Una hoja curiosa",
+            "texto": "Pepita estiró con mucho cuidado una de sus hojas hacia la esquina del jardín. Sintió cosquillas: el aire vibraba con el zumbido.\n\nDe pronto, una brisa fuerte la dobló hacia el suelo. ¡Uy! Pepita se asustó, pero poco a poco se fue enderezando."
+          },
+          {
+            "n": 7,
+            "titulo": "Probar con cuidado",
+            "texto": "Pepita pensó: «Probar es genial, pero hay que hacerlo con calma».\n\nEstiró otra vez su hoja, esta vez más despacio y agarrándose bien con las raíces. Ahora no se dobló. Sintió el zumbido más cerca, y una visita pequeña y rayada se posó un instante sobre su hoja y se fue."
+          },
+          {
+            "n": 8,
+            "titulo": "Un error que enseña",
+            "texto": "El caracol llegó despacito.\n\n—Te vi doblarte, ¿estás bien?\n—Sí. Me equivoqué la primera vez, pero aprendí a hacerlo con más cuidado. ¡Y una visita se posó en mi hoja!\n—Son las abejas —sonrió el caracol.\n\nPepita aprendió que equivocarse no es fracasar: es una manera de aprender, siempre que probemos con cuidado."
+          }
+        ]
+      }
+    },
+    "quiz": {
+      "comunes": [
+        {
+          "tipo": "comprension",
+          "pregunta": "¿Qué quería saber Pepita al principio?",
+          "opciones": [
+            "Qué había encima de la tierra",
+            "Cómo correr rápido",
+            "Dónde vivían las estrellas"
+          ],
+          "respuesta": 0
+        },
+        {
+          "tipo": "inferencia",
+          "pregunta": "¿Por qué le dijo el caracol «hay muchas maneras de averiguar algo»?",
+          "opciones": [
+            "Para mostrarle que no hay una sola forma de ser curiosa",
+            "Para que dejara de preguntar",
+            "Porque no sabía la respuesta"
+          ],
+          "respuesta": 0
+        }
+      ],
+      "porCamino": {
+        "a": [
+          {
+            "tipo": "comprension",
+            "pregunta": "¿Qué hacían las visitas rayadas en las flores?",
+            "opciones": [
+              "Se llevaban polvo amarillo en las patitas",
+              "Se comían las hojas",
+              "Dormían"
+            ],
+            "respuesta": 0
+          },
+          {
+            "tipo": "inferencia",
+            "pregunta": "¿Qué descubrió Pepita sin hacer ninguna pregunta?",
+            "opciones": [
+              "Un patrón: las visitas iban de flor en flor y volvían al tronco",
+              "Que el tronco era peligroso",
+              "Que el zumbido era el viento"
+            ],
+            "respuesta": 0
+          }
+        ],
+        "b": [
+          {
+            "tipo": "comprension",
+            "pregunta": "¿Qué respondió la hormiga?",
+            "opciones": [
+              "Que era peligro y no se acercara",
+              "Que eran amigas",
+              "Que no sabía"
+            ],
+            "respuesta": 0
+          },
+          {
+            "tipo": "inferencia",
+            "pregunta": "¿Por qué fue buena idea preguntarle «por qué» a la hormiga?",
+            "opciones": [
+              "Porque así entendió que las dos respuestas tenían parte de verdad",
+              "Porque la hormiga se enfadó",
+              "Porque así no tenía que pensar"
+            ],
+            "respuesta": 0
+          }
+        ],
+        "c": [
+          {
+            "tipo": "comprension",
+            "pregunta": "¿Qué le pasó a Pepita la primera vez que estiró su hoja?",
+            "opciones": [
+              "Una brisa la dobló",
+              "Se rompió",
+              "Se quedó dormida"
+            ],
+            "respuesta": 0
+          },
+          {
+            "tipo": "inferencia",
+            "pregunta": "¿Qué aprendió Pepita de su error?",
+            "opciones": [
+              "A probar con más cuidado y calma",
+              "A no volver a probar",
+              "Que no debía preguntar"
+            ],
+            "respuesta": 0
+          }
+        ]
+      },
+      "reflexion": {
+        "porCamino": {
+          "a": {
+            "preguntas": [
+              {
+                "tipo": "reflexion",
+                "pregunta": "Elegiste observar. ¿Por qué?",
+                "opciones": [
+                  "Porque me gusta mirar con calma",
+                  "Porque me da miedo equivocarme",
+                  "Porque así se ven cosas que otros no ven"
+                ],
+                "respuesta": null
+              },
+              {
+                "tipo": "reflexion",
+                "pregunta": "Observar tomó tiempo y a Pepita le dio un poco de aburrimiento. ¿Valió la pena?",
+                "opciones": [
+                  "Sí, porque descubrió algo por sí misma",
+                  "Depende de lo que uno quiera averiguar",
+                  "No lo sé"
+                ],
+                "respuesta": null
+              }
+            ],
+            "mensajeFinal": "Elegiste observar. Mirar con paciencia nos regala pistas que a veces nadie nos cuenta."
+          },
+          "b": {
+            "preguntas": [
+              {
+                "tipo": "reflexion",
+                "pregunta": "Elegiste preguntar. ¿Por qué?",
+                "opciones": [
+                  "Porque otros saben cosas que yo no",
+                  "Porque es más rápido",
+                  "Porque me gusta conversar"
+                ],
+                "respuesta": null
+              },
+              {
+                "tipo": "reflexion",
+                "pregunta": "La hormiga y la mariposa dijeron cosas distintas. ¿Qué haces tú cuando te dicen cosas diferentes?",
+                "opciones": [
+                  "Pregunto más",
+                  "Elijo a quien más confío",
+                  "No sé qué hacer"
+                ],
+                "respuesta": null
+              }
+            ],
+            "mensajeFinal": "Elegiste preguntar. Preguntar a varios y entender por qué dicen lo que dicen nos ayuda a comprender mejor."
+          },
+          "c": {
+            "preguntas": [
+              {
+                "tipo": "reflexion",
+                "pregunta": "Elegiste probar. ¿Por qué?",
+                "opciones": [
+                  "Porque me gusta descubrir haciendo",
+                  "Porque no me da miedo equivocarme",
+                  "Porque me pareció más emocionante"
+                ],
+                "respuesta": null
+              },
+              {
+                "tipo": "reflexion",
+                "pregunta": "Pepita se dobló con la brisa. ¿Qué piensas de equivocarse al probar?",
+                "opciones": [
+                  "Que enseña si lo hacemos con cuidado",
+                  "Que mejor no probar",
+                  "No lo sé"
+                ],
+                "respuesta": null
+              }
+            ],
+            "mensajeFinal": "Elegiste probar. Equivocarse con cuidado también es aprender."
+          }
+        },
+        "comun": {
+          "tipo": "abierta",
+          "pregunta": "¿Qué te da curiosidad ahora mismo? ¿Cómo podrías averiguarlo: mirando, preguntando o probando?",
+          "sugerencia": "Puedes contárselo a alguien de tu familia o dibujarlo."
+        }
+      }
+    }
   },
   {
-    "id":"el-pajaro-solidario","titulo":"El pájaro solidario","valor":"Solidaridad","emoji":"🐦",
-    "autor":"Equipo Mis Cuentos","fuente":"Cuento original creado para esta aplicación","licencia":"Uso educativo",
-    "paginas":[
-      "Pipo era un pájaro que volaba alegre por todas partes.",
-      "Una tarde encontró un nido que estaba casi vacío de ramas.",
-      "Pipo recogió ramitas con su pico para ayudar a sus vecinos.",
-      "Los demás pájaros llegaron con hojas, musgo y pedacitos de hilo.",
-      "Juntos terminaron pronto el nuevo nido.",
-      "Pipo descubrió que compartir lo que tenemos hace más fuertes a nuestros amigos.",
-      "Luego organizó una inspección para comprobar que el nido resistiera el viento.",
-      "Pipo entendió que colaborar incluye escuchar ideas, repartir responsabilidades y reconocer el esfuerzo de cada uno."
+    "id": "el-pajaro-solidario",
+    "titulo": "El pájaro solidario",
+    "valor": "Solidaridad",
+    "emoji": "🐦",
+    "edad": "6-10",
+    "autor": "Equipo Mis Cuentos",
+    "fuente": "Cuento original creado para esta aplicación",
+    "licencia": "Uso educativo",
+    "secciones": [
+      {
+        "n": 1,
+        "titulo": "Pipo, el alegre",
+        "texto": "Pipo era un pajarito alegre que conocía muchos rincones del bosque. Le gustaba volar con sus vecinos y detenerse a escuchar las novedades del día.\n\n—¡Hola, Pipo! —lo saludaban desde las ramas.\n—¿Quién necesita una mano hoy? —respondía él."
+      },
+      {
+        "n": 2,
+        "titulo": "Cada vecino, un talento",
+        "texto": "En el bosque, cada vecino sabía hacer algo distinto. La golondrina Lola recogía las hojas más suaves. El mirlo Mateo encontraba el mejor musgo. Y la carpintera Cora arreglaba cualquier rama floja con su pico.\n\nPipo, en cambio, no era el mejor en nada. Pero tenía un don: se daba cuenta cuando alguien necesitaba ayuda."
+      },
+      {
+        "n": 3,
+        "titulo": "El nido desordenado",
+        "texto": "Una tarde, Pipo vio que el viento había desordenado el nido de una familia de gorriones. Quedaban pocas ramas y los pequeños tiritaban de frío. Su mamá, Perla, había salido a buscar comida.\n\nPipo sintió un pellizquito en el pecho: había que hacer algo."
+      },
+      {
+        "n": 4,
+        "titulo": "Una sola ave no basta",
+        "texto": "Pipo juntó unas ramitas y las puso en el nido, pero se cayeron. Lo intentó otra vez y otra más. Se cansó mucho.\n\n«Una sola ave no puede con esto», pensó.\n\nMiró hacia el bosque. Lola, Mateo, Cora y muchos otros vecinos estaban cerca. Pero ¿cómo conseguir que todos ayudaran?"
+      },
+      {
+        "n": 5,
+        "titulo": "Tres maneras de empezar",
+        "texto": "Pipo pensó en tres maneras. Podía llamar a todos los vecinos a una reunión para explicarles el problema. Podía repartir tareas según lo que cada uno sabe hacer. O podía seguir trabajando él mismo para que los demás, al verlo, se animaran a ayudar.\n\nLos pequeños gorriones seguían esperando."
+      }
     ],
-    "quiz":[
-      {"pregunta":"¿Qué encontró Pipo?","opciones":["Un nido vacío de ramas","Una caja de juguetes","Una fruta grande"],"respuesta":0},
-      {"pregunta":"¿Qué llevó Pipo al nido?","opciones":["Piedras","Ramitas","Arena"],"respuesta":1},
-      {"pregunta":"¿Qué hicieron los pájaros juntos?","opciones":["Construyeron un nuevo nido","Se alejaron","Cortaron un árbol"],"respuesta":0}
-    ]
+    "decision": {
+      "pregunta": "¿Cómo crees que Pipo puede lograr que los vecinos ayuden?",
+      "opciones": [
+        {
+          "id": "a",
+          "emoji": "📣",
+          "texto": "Llamar a todos a una reunión",
+          "camino": "a"
+        },
+        {
+          "id": "b",
+          "emoji": "🧩",
+          "texto": "Repartir tareas según los talentos de cada uno",
+          "camino": "b"
+        },
+        {
+          "id": "c",
+          "emoji": "🪺",
+          "texto": "Dar el ejemplo: seguir trabajando para que otros se sumen",
+          "camino": "c"
+        }
+      ]
+    },
+    "caminos": {
+      "a": {
+        "titulo": "La solidaridad que reúne",
+        "emoji": "📣",
+        "secciones": [
+          {
+            "n": 6,
+            "titulo": "La reunión",
+            "texto": "Pipo voló de rama en rama y llamó a todos los vecinos. Muy pronto había pájaros en cada ramita.\n\n—El nido de los gorriones se desordenó —explicó—. Necesitan ayuda.\n\nTodos empezaron a hablar a la vez, con ideas distintas. ¡Pío, pío, pío!"
+          },
+          {
+            "n": 7,
+            "titulo": "Escuchar a todos",
+            "texto": "Pipo levantó una alita.\n\n—Hablemos de uno en uno. Cada idea cuenta.\n\nLola propuso hojas suaves, Mateo musgo, Cora revisar la firmeza. Un pajarito tímido, Nino, no dijo nada. Pipo lo notó.\n\n—Nino, ¿tú qué piensas?\n—Yo puedo vigilar que no vuelva el viento fuerte —susurró."
+          },
+          {
+            "n": 8,
+            "titulo": "Un nido de todos",
+            "texto": "Entre todos arreglaron el nido: unos acomodaron ramas, otros pusieron hojas, y Nino avisó cuando soplaba demasiado viento. Cuando mamá Perla volvió, el nido estaba listo.\n\nPipo comprendió que reunir a la comunidad lleva tiempo, pero que escuchar a todos, incluso a quien habla bajito, hace que el nido salga más fuerte."
+          }
+        ]
+      },
+      "b": {
+        "titulo": "La solidaridad que organiza",
+        "emoji": "🧩",
+        "secciones": [
+          {
+            "n": 6,
+            "titulo": "Cada uno, lo suyo",
+            "texto": "Pipo fue directo a cada vecino y le pidió algo según lo que mejor sabía hacer: hojas a Lola, musgo a Mateo, y a Cora que revisara la firmeza.\n\nEn poco tiempo todos estaban trabajando. El nido empezó a tomar forma muy rápido."
+          },
+          {
+            "n": 7,
+            "titulo": "Alguien se sintió sin tarea",
+            "texto": "Pero Nino, un pajarito pequeño, se quedó mirando desde lejos.\n\n—A mí no me tocó nada —dijo bajito.\n\nPipo se dio cuenta de que el reparto había dejado a alguien fuera. Pensó un momento.\n\n—Nino, ¿puedes avisar si ves llegar el viento fuerte?\n\nNino sonrió y subió a la rama más alta."
+          },
+          {
+            "n": 8,
+            "titulo": "Nadie queda fuera",
+            "texto": "El nido quedó firme, cálido y listo. Cuando volvió Perla, los pequeños dormían tranquilos.\n\nPipo aprendió que repartir tareas hace que todo avance, pero que hay que fijarse en que nadie se quede sin un lugar.\n\nLa solidaridad no solo es ayudar: es lograr que todos puedan ayudar."
+          }
+        ]
+      },
+      "c": {
+        "titulo": "La solidaridad que da el ejemplo",
+        "emoji": "🪺",
+        "secciones": [
+          {
+            "n": 6,
+            "titulo": "Una ramita a la vez",
+            "texto": "Pipo siguió trabajando solito: una ramita, luego otra. Iba despacio, y a veces se le caían.\n\nLos vecinos lo miraban desde lejos. Nadie decía nada, pero Pipo no se rindió."
+          },
+          {
+            "n": 7,
+            "titulo": "Uno se suma",
+            "texto": "Primero llegó Lola con una hoja suave y la puso sin decir nada. Luego Mateo trajo musgo. Después apareció Cora, que revisó cada rama.\n\n—¿Por qué no nos avisaste? —preguntó Cora.\n—No quise molestarlos —dijo Pipo.\n—Ayudar a alguien nunca es una molestia —respondió ella."
+          },
+          {
+            "n": 8,
+            "titulo": "Una comunidad que se anima",
+            "texto": "Cuando mamá Perla volvió, había varios vecinos arreglando el nido y los pequeños estaban abrigados.\n\nPipo comprendió que dar el ejemplo anima a otros, pero que también es válido pedir ayuda directamente.\n\nLa solidaridad crece cuando alguien da el primer paso, y cuando nos atrevemos a decir «¿me ayudas?»."
+          }
+        ]
+      }
+    },
+    "quiz": {
+      "comunes": [
+        {
+          "tipo": "comprension",
+          "pregunta": "¿Qué le había pasado al nido de los gorriones?",
+          "opciones": [
+            "El viento lo desordenó",
+            "Se lo llevó un zorro",
+            "Se cayó del árbol"
+          ],
+          "respuesta": 0
+        },
+        {
+          "tipo": "inferencia",
+          "pregunta": "¿Por qué pensó Pipo «una sola ave no puede con esto»?",
+          "opciones": [
+            "Porque el trabajo era demasiado para uno solo",
+            "Porque era perezoso",
+            "Porque no sabía volar"
+          ],
+          "respuesta": 0
+        }
+      ],
+      "porCamino": {
+        "a": [
+          {
+            "tipo": "comprension",
+            "pregunta": "¿Qué propuso Nino en la reunión?",
+            "opciones": [
+              "Vigilar que no volviera el viento fuerte",
+              "Traer musgo",
+              "Irse a casa"
+            ],
+            "respuesta": 0
+          },
+          {
+            "tipo": "inferencia",
+            "pregunta": "¿Por qué le preguntó Pipo a Nino qué pensaba?",
+            "opciones": [
+              "Porque notó que no había hablado y su idea también cuenta",
+              "Porque no tenía ideas propias",
+              "Porque Nino era el jefe"
+            ],
+            "respuesta": 0
+          }
+        ],
+        "b": [
+          {
+            "tipo": "comprension",
+            "pregunta": "¿Cómo se sintió Nino cuando repartieron las tareas?",
+            "opciones": [
+              "Se sintió sin tarea",
+              "Muy contento desde el principio",
+              "Enojado con Pipo"
+            ],
+            "respuesta": 0
+          },
+          {
+            "tipo": "inferencia",
+            "pregunta": "¿Qué aprendió Pipo del reparto de tareas?",
+            "opciones": [
+              "Que hay que fijarse en que nadie quede fuera",
+              "Que repartir tareas no sirve",
+              "Que era mejor hacerlo solo"
+            ],
+            "respuesta": 0
+          }
+        ],
+        "c": [
+          {
+            "tipo": "comprension",
+            "pregunta": "¿Quién se sumó primero a ayudar a Pipo?",
+            "opciones": [
+              "Lola, con una hoja suave",
+              "Cora",
+              "Mateo"
+            ],
+            "respuesta": 0
+          },
+          {
+            "tipo": "inferencia",
+            "pregunta": "¿Qué quiso decir Cora con «ayudar nunca es una molestia»?",
+            "opciones": [
+              "Que pedir ayuda está bien y los demás querrán darla",
+              "Que Pipo no debía trabajar",
+              "Que ella no quería ayudar"
+            ],
+            "respuesta": 0
+          }
+        ]
+      },
+      "reflexion": {
+        "porCamino": {
+          "a": {
+            "preguntas": [
+              {
+                "tipo": "reflexion",
+                "pregunta": "Elegiste la reunión. ¿Por qué?",
+                "opciones": [
+                  "Porque creo que todos tienen que enterarse",
+                  "Porque me gusta escuchar muchas ideas",
+                  "Porque así nadie se queda fuera"
+                ],
+                "respuesta": null
+              },
+              {
+                "tipo": "reflexion",
+                "pregunta": "En la reunión todos hablaron a la vez. ¿Qué haces tú cuando eso pasa?",
+                "opciones": [
+                  "Pido turnos",
+                  "Escucho a los más tímidos",
+                  "No sé qué hacer"
+                ],
+                "respuesta": null
+              }
+            ],
+            "mensajeFinal": "Elegiste reunir a todos. Escuchar cada voz, incluso la más bajita, hace más fuerte a una comunidad."
+          },
+          "b": {
+            "preguntas": [
+              {
+                "tipo": "reflexion",
+                "pregunta": "Elegiste repartir tareas. ¿Por qué?",
+                "opciones": [
+                  "Porque así se avanza más rápido",
+                  "Porque cada quien hace lo que mejor sabe",
+                  "Porque me gusta organizar"
+                ],
+                "respuesta": null
+              },
+              {
+                "tipo": "reflexion",
+                "pregunta": "Nino se quedó sin tarea al principio. ¿Cómo crees que se sintió?",
+                "opciones": [
+                  "Dejado de lado",
+                  "Tranquilo",
+                  "No lo sé"
+                ],
+                "respuesta": null
+              }
+            ],
+            "mensajeFinal": "Elegiste organizar. Repartir ayuda funciona muy bien, pero hay que cuidar que nadie quede sin su lugar."
+          },
+          "c": {
+            "preguntas": [
+              {
+                "tipo": "reflexion",
+                "pregunta": "Elegiste dar el ejemplo. ¿Por qué?",
+                "opciones": [
+                  "Porque creo que las acciones animan a otros",
+                  "Porque no quería molestar a nadie",
+                  "Porque me gusta ayudar sin esperar nada"
+                ],
+                "respuesta": null
+              },
+              {
+                "tipo": "reflexion",
+                "pregunta": "Pipo no pidió ayuda, y Cora lo notó. ¿Qué piensas de eso?",
+                "opciones": [
+                  "Que pedir ayuda también es válido",
+                  "Que dar el ejemplo bastaba",
+                  "No sé"
+                ],
+                "respuesta": null
+              }
+            ],
+            "mensajeFinal": "Elegiste el ejemplo. Dar el primer paso anima a otros, y pedir ayuda a tiempo hace que lleguen antes."
+          }
+        },
+        "comun": {
+          "tipo": "abierta",
+          "pregunta": "¿Cuándo ayudaste a alguien junto con otras personas? ¿Qué papel tuviste?",
+          "sugerencia": "Puedes contárselo a alguien de tu familia o dibujarlo."
+        }
+      }
+    }
   },
   {
-    "id":"la-estrella-paciente","titulo":"La estrella paciente","valor":"Paciencia","emoji":"⭐",
-    "autor":"Equipo Mis Cuentos","fuente":"Cuento original creado para esta aplicación","licencia":"Uso educativo",
-    "paginas":[
-      "Una pequeña estrella esperaba su turno para brillar en el cielo.",
-      "Al principio quería iluminarlo todo a la vez.",
-      "Su mamá le enseñó que cada luz aparece en el momento adecuado.",
-      "La estrella practicó esperar con calma y mirar hacia arriba.",
-      "Cuando llegó la noche, su brillo iluminó el camino de muchos viajeros.",
-      "Comprendió que tener paciencia permite que las cosas buenas sucedan.",
-      "Antes de repetir la prueba, hizo una pausa para comprobar qué necesitaba su luz.",
-      "Con práctica, paciencia y atención, encontró el momento justo y logró iluminar sin perder su calma."
+    "id": "la-estrella-paciente",
+    "titulo": "La estrella paciente",
+    "valor": "Paciencia",
+    "emoji": "⭐",
+    "edad": "6-10",
+    "autor": "Equipo Mis Cuentos",
+    "fuente": "Cuento original creado para esta aplicación",
+    "licencia": "Uso educativo",
+    "secciones": [
+      {
+        "n": 1,
+        "titulo": "Luma, la estrella impaciente",
+        "texto": "En una esquina del cielo vivía una estrella pequeña llamada Luma. Cada noche esperaba su turno para brillar, pero quería iluminarlo todo de inmediato.\n\n—¡Mamá, quiero encender todas mis luces ahora! —decía."
+      },
+      {
+        "n": 2,
+        "titulo": "Cada luz, su momento",
+        "texto": "—Cada luz tiene su momento —respondía su mamá—. Puedes aprender mientras esperas.\n\nPero Luma no quería esperar. Miraba el cielo todavía claro y suspiraba. Le parecía que la noche tardaba una eternidad."
+      },
+      {
+        "n": 3,
+        "titulo": "Brillar antes de tiempo",
+        "texto": "Una tarde, Luma intentó brillar antes de tiempo. Se esforzó tanto que terminó cansada y su luz apenas se veía. Miró a su alrededor: el cielo todavía estaba claro y los viajeros aún no necesitaban una guía."
+      },
+      {
+        "n": 4,
+        "titulo": "¿Y si nunca brillo bastante?",
+        "texto": "—¿Y si nunca consigo brillar lo suficiente? —preguntó Luma, muy bajito.\n—No tienes que hacerlo todo de una vez —le recordó su mamá—. Respira y observa.\n\nLuma se quedó pensando. Todavía faltaba un buen rato para la noche. Podía aprovechar ese tiempo de varias maneras."
+      },
+      {
+        "n": 5,
+        "titulo": "Esperar de tres maneras",
+        "texto": "Luma pensó en tres maneras de esperar. Podía quedarse tranquila, respirando y mirando cómo cambiaba el cielo. Podía practicar con lucecitas pequeñas para estar lista. O podía hacer compañía a Pía, una estrellita nueva que nunca había brillado y estaba nerviosa.\n\nEl sol empezaba a bajar. ¿Qué haría Luma?"
+      }
     ],
-    "quiz":[
-      {"pregunta":"¿Qué esperaba hacer la estrella?","opciones":["Brillar en el cielo","Dormir todo el día","Esconderse"],"respuesta":0},
-      {"pregunta":"¿Qué le enseñó su mamá?","opciones":["Que cada luz aparece a su momento","Que debía iluminar siempre","Que no debía esperar"],"respuesta":0},
-      {"pregunta":"¿Quiénes recibieron su luz?","opciones":["Los viajeros","Los peces del río","Las plantas de la montaña"],"respuesta":0}
-    ]
+    "decision": {
+      "pregunta": "¿Cómo crees que Luma puede esperar mejor?",
+      "opciones": [
+        {
+          "id": "a",
+          "emoji": "🌅",
+          "texto": "Respirar y observar el cielo",
+          "camino": "a"
+        },
+        {
+          "id": "b",
+          "emoji": "✨",
+          "texto": "Practicar con lucecitas pequeñas",
+          "camino": "b"
+        },
+        {
+          "id": "c",
+          "emoji": "💫",
+          "texto": "Hacer compañía a Pía, la estrellita nueva",
+          "camino": "c"
+        }
+      ]
+    },
+    "caminos": {
+      "a": {
+        "titulo": "La paciencia que observa",
+        "emoji": "🌅",
+        "secciones": [
+          {
+            "n": 6,
+            "titulo": "Respirar y mirar",
+            "texto": "Luma respiró hondo y miró el cielo. Primero era azul claro; luego, naranja; después, rosa.\n\nCada color duraba un poquito. A Luma le empezó a gustar mirar cómo el día se despedía poco a poco."
+          },
+          {
+            "n": 7,
+            "titulo": "El cielo avisa",
+            "texto": "Luma notó algo: cuando el cielo se ponía morado, los pájaros volvían a sus nidos y los grillos empezaban a cantar.\n\n—¡Son señales! —pensó—. Cuando todo se calma, es la hora de brillar.\n\nPor primera vez no sintió ganas de apurarse."
+          },
+          {
+            "n": 8,
+            "titulo": "La hora justa",
+            "texto": "Cuando el cielo se puso azul oscuro y los grillos cantaron, Luma dejó que su luz apareciera despacito. Iluminó un sendero para una viajera.\n\n—¡Ahora puedo ver el camino! —dijo ella.\n\nLuma aprendió que esperar con atención permite saber cuándo es el momento. La paciencia no es quedarse sin hacer nada: es mirar y aprender."
+          }
+        ]
+      },
+      "b": {
+        "titulo": "La paciencia que se prepara",
+        "emoji": "✨",
+        "secciones": [
+          {
+            "n": 6,
+            "titulo": "Lucecitas de práctica",
+            "texto": "Luma encendió una lucecita muy pequeña, apenas un puntito. Luego otra, un poquito más fuerte. Probó con tres a la vez.\n\nEn cada intento aprendía algo: cuánta luz sale si sopla suave y cuánta si sopla fuerte."
+          },
+          {
+            "n": 7,
+            "titulo": "Descansar también ayuda",
+            "texto": "Después de muchos intentos, Luma se sintió cansada y su luz parpadeó.\n\n—Descansa un rato —dijo su mamá—. Practicar sirve, pero el cuerpo también necesita una pausa.\n\nLuma se recostó sobre una nube suave y respiró. Al rato se sintió fuerte otra vez."
+          },
+          {
+            "n": 8,
+            "titulo": "Lista para la noche",
+            "texto": "Cuando llegó la noche, Luma brilló con luz firme y parejita, justo como había practicado. Un viajero la vio desde lejos y siguió su camino.\n\nLuma aprendió que la paciencia también es prepararse poco a poco, sin cansarnos de más. Esperar no es perder el tiempo: es usarlo con cariño."
+          }
+        ]
+      },
+      "c": {
+        "titulo": "La paciencia que acompaña",
+        "emoji": "💫",
+        "secciones": [
+          {
+            "n": 6,
+            "titulo": "Una estrellita nerviosa",
+            "texto": "Luma se acercó a Pía, que temblaba en un rincón.\n\n—¿Qué pasa?\n—Nunca he brillado —dijo Pía—. Y si no lo hago bien…\n\nLuma sonrió. Recordó lo que ella misma sentía. Se sentó a su lado y le contó cómo respiraba cuando tenía prisa."
+          },
+          {
+            "n": 7,
+            "titulo": "Esperar acompañada",
+            "texto": "Las dos miraron el cielo cambiar de color y respiraron juntas.\n\n—No tienes que ser perfecta —dijo Luma—. Yo tampoco. Solo tenemos que esperar el momento.\n\nSin darse cuenta, Luma ya no estaba impaciente. Al ayudar a Pía, el tiempo había pasado más rápido."
+          },
+          {
+            "n": 8,
+            "titulo": "Dos luces",
+            "texto": "Cuando llegó la noche, Luma brilló primero, suave y firme. Pía la miró y se animó a encender su propia lucecita. Juntas iluminaron un sendero más ancho para los viajeros.\n\nLuma aprendió que esperar acompañada hace más ligero el tiempo, y que ayudar a otro también nos enseña a tener paciencia."
+          }
+        ]
+      }
+    },
+    "quiz": {
+      "comunes": [
+        {
+          "tipo": "comprension",
+          "pregunta": "¿Qué le pasó a Luma cuando intentó brillar antes de tiempo?",
+          "opciones": [
+            "Se cansó y su luz casi no se veía",
+            "Brilló más que nunca",
+            "Se perdió en el cielo"
+          ],
+          "respuesta": 0
+        },
+        {
+          "tipo": "inferencia",
+          "pregunta": "¿Qué quiso decir su mamá con «no tienes que hacerlo todo de una vez»?",
+          "opciones": [
+            "Que se puede avanzar poco a poco",
+            "Que Luma no debía brillar",
+            "Que el esfuerzo no importaba"
+          ],
+          "respuesta": 0
+        }
+      ],
+      "porCamino": {
+        "a": [
+          {
+            "tipo": "comprension",
+            "pregunta": "¿Qué señales notó Luma antes de brillar?",
+            "opciones": [
+              "Los pájaros volvían a sus nidos y los grillos cantaban",
+              "Llovía fuerte",
+              "Salían muchas nubes"
+            ],
+            "respuesta": 0
+          },
+          {
+            "tipo": "inferencia",
+            "pregunta": "¿Por qué la paciencia «no es quedarse sin hacer nada»?",
+            "opciones": [
+              "Porque mirar y aprender también es hacer algo",
+              "Porque hay que dormir",
+              "Porque esperar no importa"
+            ],
+            "respuesta": 0
+          }
+        ],
+        "b": [
+          {
+            "tipo": "comprension",
+            "pregunta": "¿Qué le dijo la mamá cuando Luma se cansó?",
+            "opciones": [
+              "Que descansara un rato",
+              "Que siguiera sin parar",
+              "Que se rindiera"
+            ],
+            "respuesta": 0
+          },
+          {
+            "tipo": "inferencia",
+            "pregunta": "¿Por qué fue importante descansar?",
+            "opciones": [
+              "Porque practicar sirve, pero sin cansarse de más",
+              "Porque a Luma no le gustaba practicar",
+              "Porque ya era de noche"
+            ],
+            "respuesta": 0
+          }
+        ],
+        "c": [
+          {
+            "tipo": "comprension",
+            "pregunta": "¿Qué le pasaba a Pía?",
+            "opciones": [
+              "Estaba nerviosa porque nunca había brillado",
+              "Estaba dormida",
+              "Tenía hambre"
+            ],
+            "respuesta": 0
+          },
+          {
+            "tipo": "inferencia",
+            "pregunta": "¿Por qué crees que el tiempo pasó más rápido para Luma?",
+            "opciones": [
+              "Porque estuvo ocupada ayudando a Pía",
+              "Porque se quedó dormida",
+              "Porque el sol corrió más"
+            ],
+            "respuesta": 0
+          }
+        ]
+      },
+      "reflexion": {
+        "porCamino": {
+          "a": {
+            "preguntas": [
+              {
+                "tipo": "reflexion",
+                "pregunta": "Elegiste respirar y observar. ¿Por qué?",
+                "opciones": [
+                  "Porque la calma me ayuda",
+                  "Porque quería aprender del cielo",
+                  "Porque a mí también me cuesta esperar"
+                ],
+                "respuesta": null
+              },
+              {
+                "tipo": "reflexion",
+                "pregunta": "A Luma le gustó mirar cómo cambiaba el cielo. ¿Qué ves tú cuando esperas con calma?",
+                "opciones": [
+                  "Cosas que antes no notaba",
+                  "Nada especial",
+                  "Me aburro"
+                ],
+                "respuesta": null
+              }
+            ],
+            "mensajeFinal": "Elegiste la calma. Esperar mirando con atención nos enseña cuándo es el mejor momento."
+          },
+          "b": {
+            "preguntas": [
+              {
+                "tipo": "reflexion",
+                "pregunta": "Elegiste practicar. ¿Por qué?",
+                "opciones": [
+                  "Porque me gusta prepararme",
+                  "Porque no quería perder el tiempo",
+                  "Porque así me siento más segura"
+                ],
+                "respuesta": null
+              },
+              {
+                "tipo": "reflexion",
+                "pregunta": "Luma se cansó de tanto practicar. ¿Qué piensas?",
+                "opciones": [
+                  "Que descansar también es parte de aprender",
+                  "Que debió seguir practicando",
+                  "No sé"
+                ],
+                "respuesta": null
+              }
+            ],
+            "mensajeFinal": "Elegiste prepararte. Practicar y descansar juntos nos ayuda a estar listos."
+          },
+          "c": {
+            "preguntas": [
+              {
+                "tipo": "reflexion",
+                "pregunta": "Elegiste acompañar a Pía. ¿Por qué?",
+                "opciones": [
+                  "Porque me gusta ayudar a otros",
+                  "Porque pensé que estaba asustada",
+                  "Porque esperar acompañado es más fácil"
+                ],
+                "respuesta": null
+              },
+              {
+                "tipo": "reflexion",
+                "pregunta": "Al ayudar a Pía, a Luma se le pasó la impaciencia. ¿Por qué crees que pasó?",
+                "opciones": [
+                  "Porque pensó en otra cosa y se sintió útil",
+                  "Porque Pía era divertida",
+                  "No lo sé"
+                ],
+                "respuesta": null
+              }
+            ],
+            "mensajeFinal": "Elegiste acompañar. Ayudar a otros también nos ayuda a esperar mejor."
+          }
+        },
+        "comun": {
+          "tipo": "abierta",
+          "pregunta": "¿Qué te cuesta esperar? ¿Qué podrías hacer mientras esperas?",
+          "sugerencia": "Puedes contárselo a alguien de tu familia o dibujarlo."
+        }
+      }
+    }
   }
 ]
