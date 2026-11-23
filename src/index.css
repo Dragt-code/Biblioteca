@@ -1,94 +1,131 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Nunito", system-ui, sans-serif;
-  --color-principal: #7C4DFF;
-  --color-secundario: #20B486;
-  --color-acento: #FFB703;
-  --color-fondo: #FFF9EC;
-  --color-texto: #355070;
-  --color-primavera-rosa: #F875AA;
-  --color-primavera-lila: #B59CEB;
-  --color-primavera-menta: #A8E6CF;
-  --color-primavera-cielo: #6ECBF5;
-  --color-primavera-coral: #FF9F80;
+  --font-sans: "Nunito", "Avenir Next", system-ui, sans-serif;
+  --color-principal: #7047d7;
+  --color-secundario: #159b72;
+  --color-acento: #ffc857;
+  --color-fondo: #fffaf0;
+  --color-texto: #34465f;
+  --color-primavera-rosa: #f875aa;
+  --color-primavera-lila: #b59ceb;
+  --color-primavera-menta: #a8e6cf;
+  --color-primavera-cielo: #6ecbf5;
+  --color-primavera-coral: #ff9f80;
 }
 
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color-scheme: light;
+  --surface: rgba(255, 255, 255, 0.94);
+  --surface-soft: #fffdf8;
+  --line: rgba(112, 71, 215, 0.13);
+  --shadow-card: 0 12px 32px rgba(69, 57, 104, 0.08);
+}
+
+* { box-sizing: border-box; }
+
+html { min-width: 320px; scroll-behavior: smooth; }
+
 body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
   background-color: var(--color-fondo);
   background-image:
-    linear-gradient(rgba(255, 249, 236, 0.82), rgba(255, 249, 236, 0.82)),
+    radial-gradient(ellipse at 8% 5%, rgba(110, 203, 245, 0.16), transparent 32rem),
+    radial-gradient(ellipse at 95% 42%, rgba(248, 117, 170, 0.11), transparent 30rem),
+    linear-gradient(rgba(255, 250, 240, 0.89), rgba(255, 250, 240, 0.94)),
     url('./assets/Fondo.webp');
   background-position: center top;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto, auto, cover, cover;
   background-attachment: fixed;
   color: var(--color-texto);
-  font-size: 1.125rem;
-  min-height: 100vh;
+  font-size: 1.0625rem;
+  line-height: 1.55;
+}
+
+button, a { -webkit-tap-highlight-color: transparent; }
+button { font: inherit; }
+a { text-decoration-thickness: 1px; text-underline-offset: 3px; }
+:focus-visible { outline: 3px solid #f0a900; outline-offset: 3px; }
+::selection { background: rgba(181, 156, 235, 0.35); }
+
+/* Shared polish for the cards and controls used throughout the app. */
+article, main section > header, main section > div.rounded-\[2rem\] {
+  backdrop-filter: blur(10px);
+}
+
+article {
+  box-shadow: var(--shadow-card);
+}
+
+article button:not(:disabled),
+article a,
+main section a,
+main section > button {
+  transition: transform 180ms ease, box-shadow 180ms ease, background-color 180ms ease;
+}
+
+article a:hover, main section a:hover { box-shadow: 0 8px 18px rgba(52, 70, 95, 0.14); }
+
+[data-theme="dark"] {
+  color-scheme: dark;
+  --surface: rgba(42, 49, 71, 0.96);
+  --surface-soft: #252b3e;
+  --line: rgba(181, 156, 235, 0.23);
+  --shadow-card: 0 14px 34px rgba(6, 10, 24, 0.24);
 }
 
 [data-theme="dark"] body {
   background-color: #202638;
   background-image:
-    linear-gradient(rgba(32, 38, 56, 0.94), rgba(32, 38, 56, 0.94)),
+    radial-gradient(ellipse at 8% 5%, rgba(110, 203, 245, 0.08), transparent 32rem),
+    radial-gradient(ellipse at 95% 42%, rgba(248, 117, 170, 0.06), transparent 30rem),
+    linear-gradient(rgba(32, 38, 56, 0.94), rgba(32, 38, 56, 0.97)),
     url('./assets/Fondo.webp');
   color: #eef2ff;
 }
 
 [data-theme="dark"] .bg-white,
-[data-theme="dark"] .bg-white\/95 {
-  background-color: #2a3147 !important;
-}
-
-[data-theme="dark"] .bg-fondo {
-  background-color: #252b3e !important;
-}
-
+[data-theme="dark"] .bg-white\/95,
+[data-theme="dark"] .bg-white\/90,
+[data-theme="dark"] .bg-white\/75 { background-color: #2a3147 !important; }
+[data-theme="dark"] .bg-fondo { background-color: #252b3e !important; }
 [data-theme="dark"] .text-texto,
-[data-theme="dark"] footer {
-  color: #eef2ff !important;
+[data-theme="dark"] footer { color: #eef2ff !important; }
+[data-theme="dark"] article,
+[data-theme="dark"] main section > header,
+[data-theme="dark"] main section > div.rounded-\[2rem\] {
+  border-color: var(--line);
 }
-
 [data-theme="dark"] .border-primavera-lila\/30,
-[data-theme="dark"] .ring-principal\/10 {
-  border-color: rgba(181, 156, 235, 0.35) !important;
-}
+[data-theme="dark"] .ring-principal\/10 { border-color: var(--line) !important; }
 
-.emoji-suave {
-  animation: emoji-suave 2.4s ease-in-out infinite;
-  transform-origin: center bottom;
-}
-
-.emoji-balanceo {
-  animation: balanceo 3s ease-in-out infinite;
-}
-
-.emoji-volador {
-  animation: volador 4s ease-in-out infinite;
-}
+.emoji-suave { animation: emoji-suave 2.4s ease-in-out infinite; transform-origin: center bottom; }
+.emoji-balanceo { animation: balanceo 3s ease-in-out infinite; }
+.emoji-volador { animation: volador 4s ease-in-out infinite; }
 
 @keyframes balanceo {
   0%, 100% { transform: rotate(-8deg); }
   50% { transform: rotate(8deg) translateY(-8px); }
 }
-
 @keyframes volador {
   0%, 100% { transform: translate(0, 0); }
   50% { transform: translate(-18px, -12px) rotate(-6deg); }
 }
-
 @keyframes emoji-suave {
-  0%, 100% {
-    transform: translateY(0) rotate(-2deg);
-  }
-  50% {
-    transform: translateY(-12px) rotate(2deg);
-  }
+  0%, 100% { transform: translateY(0) rotate(-2deg); }
+  50% { transform: translateY(-12px) rotate(2deg); }
 }
 
+@media (max-width: 640px) {
+  body { font-size: 1rem; background-attachment: scroll; }
+}
 @media (prefers-reduced-motion: reduce) {
-  .emoji-suave {
-    animation: none;
-  }
+  *, *::before, *::after { scroll-behavior: auto !important; animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
 }
