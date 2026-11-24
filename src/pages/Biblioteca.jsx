@@ -1,5 +1,6 @@
 import TarjetaCuento from '../components/TarjetaCuento'
 import cuentos from '../data/cuentos.json'
+import MediaImage from '../components/MediaImage'
 
 export default function Biblioteca() {
   return (
@@ -12,6 +13,13 @@ export default function Biblioteca() {
         </p>
       </div>
 
+      <div className="mb-7 grid items-center gap-4 rounded-3xl border border-primavera-lila/25 bg-white/85 p-4 shadow-sm sm:grid-cols-[8rem_1fr] sm:p-5">
+        <MediaImage keyword="libros y estrellas" className="h-28 w-full rounded-2xl sm:h-32" label="Libros y estrellas ilustrados" />
+        <div>
+          <p className="text-lg font-black text-principal">Un rincón lleno de imaginación</p>
+          <p className="font-bold text-texto/75">Elige un cuento y encuentra una nueva amistad en cada página.</p>
+        </div>
+      </div>
       <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3">
         {cuentos.map((cuento) => (
           <TarjetaCuento key={cuento.id} cuento={cuento} />

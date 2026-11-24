@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import cuentos from '../data/cuentos.json'
+import MediaImage from '../components/MediaImage'
 
 export default function MisTareas() {
   const [respuestas, setRespuestas] = useState({})
@@ -72,6 +73,7 @@ export default function MisTareas() {
               key={cuento.id}
               className="flex flex-col rounded-3xl border border-primavera-lila/25 bg-white p-5 shadow-md transition-transform hover:-translate-y-1 sm:p-6"
             >
+              <MediaImage keyword={`${cuento.titulo} naturaleza infantil`} className="mb-4 h-32 w-full rounded-2xl" label={`Ilustración para la actividad: ${cuento.titulo}`} />
               <div className="flex items-center gap-3">
                 <span className="text-5xl" role="img" aria-label={cuento.titulo}>{cuento.emoji}</span>
                 <div>
