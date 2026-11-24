@@ -19,17 +19,15 @@ export default function Lector() {
   const cuento = cuentos.find((item) => item.id === id)
   const [estado, setEstado] = useState({ id, pagina: 0, ruta: null })
   const [segundos, setSegundos] = useState(0)
-  const [espera, setEspera] = useState(5)
+  const [espera, setEspera] = useState(0)
   const finalRegistrado = useRef('')
   const paginaInicial = estado.id === id ? estado.pagina : 0
   const rutaInicial = estado.id === id ? estado.ruta : null
   const ultimaSeccionInicial = paginaInicial === TOTAL_PAGINAS - 1 && Boolean(rutaInicial)
   useEffect(() => {
     setSegundos(0)
-    setEspera(5)
     const timerLectura = window.setInterval(() => setSegundos((valor) => valor + 1), 1000)
-    const timerEspera = window.setInterval(() => setEspera((valor) => Math.max(0, valor - 1)), 1000)
-    return () => { window.clearInterval(timerLectura); window.clearInterval(timerEspera) }
+    return () => window.clearInterval(timerLectura)
   }, [id, paginaInicial, rutaInicial])
   useEffect(() => {
     if (!ultimaSeccionInicial || !cuento) return
@@ -193,10 +191,9 @@ export default function Lector() {
               <button
                 type="button"
                 onClick={() => irA(paginaActual + 1)}
-                disabled={espera > 0}
-                className="flex min-h-12 items-center justify-center rounded-xl bg-secundario px-4 py-3 text-lg font-black text-white transition-colors hover:bg-principal disabled:cursor-not-allowed disabled:opacity-50 sm:text-xl"
+                className="flex min-h-12 items-center justify-center rounded-xl bg-secundario px-4 py-3 text-lg font-black text-white transition-colors hover:bg-principal sm:text-xl"
               >
-                {espera > 0 ? `Continúa en ${espera} s` : 'Siguiente'}
+                Siguiente
               </button>
             )}
           </div>
