@@ -1,10 +1,12 @@
 import { Link } from 'react-router-dom'
 import AnimacionAmiga from '../components/AnimacionAmiga'
 import portada from '../assets/Portada.png'
+import EsquinaPersonaje from '../components/EsquinaPersonaje'
 
 export default function Inicio() {
   return (
     <section className="relative flex w-full items-center justify-center overflow-hidden rounded-[2rem] border border-primavera-lila/30 bg-gradient-to-br from-white via-primavera-menta/20 to-primavera-cielo/20 p-5 shadow-lg sm:p-10">
+      <EsquinaPersonaje tipo="calmada" />
       <AnimacionAmiga personaje="🌼" className="absolute left-5 top-5" label="Flor que se balancea" />
       <AnimacionAmiga personaje="🦋" className="absolute bottom-5 right-5" label="Mariposa que vuela" />
       <div className="grid w-full max-w-5xl items-center gap-6 md:grid-cols-[1.1fr_0.9fr]">

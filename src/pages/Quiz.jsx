@@ -2,6 +2,7 @@ import { useParams, useSearchParams, Link } from 'react-router-dom'
 import { useEffect, useRef, useState } from 'react'
 import cuentos from '../data/cuentos.json'
 import { registrarEvento } from '../hooks/seguimiento'
+import EsquinaPersonaje from '../components/EsquinaPersonaje'
 
 export default function Quiz() {
   const { id } = useParams()
@@ -50,7 +51,8 @@ export default function Quiz() {
   // Sin un camino válido no se sabe qué preguntas mostrar: se invita a leer el cuento
   if (!camino || !cuento.caminos?.[camino]) {
     return (
-      <section className="w-full rounded-3xl bg-white p-6 text-center shadow-sm sm:p-10">
+      <section className="relative w-full rounded-3xl bg-white p-6 text-center shadow-sm sm:p-10">
+        <EsquinaPersonaje tipo="pensativa" />
         <div className="text-7xl" role="img" aria-label={cuento.titulo}>{cuento.emoji}</div>
         <h1 className="mt-4 text-3xl font-black text-principal">Primero lee el cuento</h1>
         <p className="mt-3 text-xl font-bold">
@@ -189,7 +191,8 @@ export default function Quiz() {
   }
 
   return (
-    <section className="w-full rounded-3xl bg-white p-6 text-center shadow-sm sm:p-10">
+    <section className="relative w-full rounded-3xl bg-white p-6 text-center shadow-sm sm:p-10">
+      <EsquinaPersonaje tipo="pensativa" />
       <div className="text-6xl" role="img" aria-label={cuento.titulo}>{cuento.emoji}</div>
       <p className="mt-3 text-base font-black text-principal sm:text-lg">
         Pregunta {estadoActual.indice + 1} de {preguntas.length}

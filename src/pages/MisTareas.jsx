@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import cuentos from '../data/cuentos.json'
 import MediaImage from '../components/MediaImage'
+import EsquinaPersonaje from '../components/EsquinaPersonaje'
 
 export default function MisTareas() {
   const [respuestas, setRespuestas] = useState({})
@@ -55,7 +56,8 @@ export default function MisTareas() {
 
   return (
     <section className="w-full">
-      <div className="rounded-[2rem] border border-primavera-lila/30 bg-gradient-to-r from-primavera-cielo/20 via-white to-primavera-rosa/20 px-5 py-7 text-center shadow-sm">
+      <div className="relative rounded-[2rem] border border-primavera-lila/30 bg-gradient-to-r from-primavera-cielo/20 via-white to-primavera-rosa/20 px-5 py-7 text-center shadow-sm">
+        <EsquinaPersonaje tipo="pensativa" />
         <span className="text-6xl" role="img" aria-label="Tareas de primavera">🌱📝</span>
         <h1 className="mt-3 text-4xl font-black text-principal sm:text-5xl">Extras</h1>
         <p className="mt-2 text-lg font-bold text-texto/75">

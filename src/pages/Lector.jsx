@@ -3,6 +3,7 @@ import { Link, useParams } from 'react-router-dom'
 import cuentos from '../data/cuentos.json'
 import BotonVoz from '../components/BotonVoz'
 import { registrarEvento } from '../hooks/seguimiento'
+import EsquinaPersonaje from '../components/EsquinaPersonaje'
 
 const PAGINA_DECISION = 4 // la quinta sección (índice 4) es la decisión
 const TOTAL_PAGINAS = 8 // 5 comunes + 3 del camino elegido
@@ -86,7 +87,8 @@ export default function Lector() {
 
   return (
     <section className="flex w-full justify-center">
-      <div className="flex w-full max-w-3xl flex-col rounded-3xl bg-white p-5 shadow-md sm:p-10">
+      <div className="relative flex w-full max-w-3xl flex-col rounded-3xl bg-white p-5 shadow-md sm:p-10">
+        <EsquinaPersonaje tipo="leyendo" />
         <div className="flex items-center gap-3 sm:gap-5">
           <span className="text-5xl sm:text-6xl" role="img" aria-label={cuento.titulo}>
             {cuento.emoji}

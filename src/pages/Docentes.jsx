@@ -1,4 +1,5 @@
 import demoDocentes from '../data/demo-docentes.json'
+import EsquinaPersonaje from '../components/EsquinaPersonaje'
 
 const totalExtrasPorCuento = 2
 const totalExtras = demoDocentes.cuentos.length * totalExtrasPorCuento
@@ -29,7 +30,8 @@ export default function Docentes() {
 
   return (
     <section className="w-full space-y-7">
-      <header className="rounded-[2rem] border border-primavera-lila/30 bg-gradient-to-r from-primavera-cielo/20 via-white to-primavera-menta/20 px-5 py-7 text-center shadow-sm sm:px-8">
+      <header className="relative rounded-[2rem] border border-primavera-lila/30 bg-gradient-to-r from-primavera-cielo/20 via-white to-primavera-menta/20 px-5 py-7 text-center shadow-sm sm:px-8">
+        <EsquinaPersonaje tipo="calmada" />
         <p className="text-sm font-black uppercase tracking-wide text-principal">Panel de demostración</p>
         <h1 className="mt-2 text-4xl font-black text-principal sm:text-5xl">Vista docente</h1>
         <p className="mt-2 text-lg font-bold text-texto/75">{demoDocentes.aula}</p>
