@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import AnimacionAmiga from '../components/AnimacionAmiga'
-import MediaImage from '../components/MediaImage'
+import portada from '../assets/Portada.png'
 
 export default function Inicio() {
   return (
@@ -18,7 +18,9 @@ export default function Inicio() {
             <span className="mr-2" aria-hidden="true">✨</span> ¡A leer cuentos!
           </Link>
         </div>
-        <MediaImage keyword="animales tiernos ilustración" className="hero-media mx-auto w-full max-w-md" label="Animales ilustrados para descubrir cuentos" priority />
+        <div className="hero-media mx-auto flex w-full max-w-md items-center justify-center rounded-3xl bg-white/70 p-4">
+          <img src={portada} alt="Niño leyendo en una tableta" className="max-h-80 w-full object-contain" />
+        </div>
       </div>
     </section>
   )
