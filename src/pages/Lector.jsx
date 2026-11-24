@@ -1,7 +1,8 @@
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import cuentos from '../data/cuentos.json'
 import BotonVoz from '../components/BotonVoz'
+import { registrarEvento } from '../hooks/seguimiento'
 
 const PAGINA_DECISION = 4 // la quinta sección (índice 4) es la decisión
 const TOTAL_PAGINAS = 8 // 5 comunes + 3 del camino elegido
@@ -17,6 +18,27 @@ export default function Lector() {
   const { id } = useParams()
   const cuento = cuentos.find((item) => item.id === id)
   const [estado, setEstado] = useState({ id, pagina: 0, ruta: null })
+  const [segundos, setSegundos] = useState(0)
+  const [espera, setEspera] = useState(5)
+  const finalRegistrado = useRef('')
+  const paginaInicial = estado.id === id ? estado.pagina : 0
+  const rutaInicial = estado.id === id ? estado.ruta : null
+  const ultimaSeccionInicial = paginaInicial === TOTAL_PAGINAS - 1 && Boolean(rutaInicial)
+  useEffect(() => {
+    setSegundos(0)
+    setEspera(5)
+    const timerLectura = window.setInterval(() => setSegundos((valor) => valor + 1), 1000)
+    const timerEspera = window.setInterval(() => setEspera((valor) => Math.max(0, valor - 1)), 1000)
+    return () => { window.clearInterval(timerLectura); window.clearInterval(timerEspera) }
+  }, [id, paginaInicial, rutaInicial])
+  useEffect(() => {
+    if (!ultimaSeccionInicial || !cuento) return
+    const claveFinal = `${id}:${rutaInicial}`
+    if (finalRegistrado.current !== claveFinal) {
+      finalRegistrado.current = claveFinal
+      registrarEvento('cuento_finalizado', { cuentoId: id, titulo: cuento.titulo, ruta: rutaInicial })
+    }
+  }, [ultimaSeccionInicial, id, rutaInicial, cuento])
 
   const formatoValido = cuento && Array.isArray(cuento.secciones) && cuento.caminos && cuento.decision
 
@@ -51,7 +73,6 @@ export default function Lector() {
   const progreso = ((paginaActual + 1) / TOTAL_PAGINAS) * 100
   const textoPagina = seccionActual?.texto ?? ''
   const textoVoz = mostrarDecision ? `${textoPagina}\n\n${cuento.decision.pregunta}` : textoPagina
-
   const volver = () => {
     if (paginaActual === PAGINA_DECISION + 1) {
       // Al volver a la decisión se borra la elección para poder elegir otro camino
@@ -59,6 +80,10 @@ export default function Lector() {
     } else {
       irA(Math.max(0, paginaActual - 1))
     }
+  }
+  const elegirCamino = (caminoElegido) => {
+    registrarEvento('ruta_elegida', { cuentoId: id, titulo: cuento.titulo, ruta: caminoElegido })
+    irA(PAGINA_DECISION + 1, caminoElegido)
   }
 
   return (
@@ -100,7 +125,7 @@ export default function Lector() {
                 <button
                   key={opcion.id}
                   type="button"
-                  onClick={() => irA(PAGINA_DECISION + 1, opcion.camino)}
+                  onClick={() => elegirCamino(opcion.camino)}
                   className={`flex min-h-16 flex-col items-center justify-center gap-1 rounded-2xl border-2 px-4 py-4 text-center text-lg font-black text-texto transition-transform hover:-translate-y-1 ${ESTILOS_OPCION[opcion.id]}`}
                 >
                   <span className="text-3xl" aria-hidden="true">{opcion.emoji}</span>
@@ -114,6 +139,7 @@ export default function Lector() {
         <div className="mt-4 flex justify-center sm:justify-end">
           <BotonVoz key={`${id}-${paginaActual}-${ruta ?? 'comun'}`} texto={textoVoz} />
         </div>
+        <p className="mt-3 text-center text-sm font-bold text-texto/70" aria-live="polite">⏱ Tiempo en esta sección: {Math.floor(segundos / 60)}:{String(segundos % 60).padStart(2, '0')}</p>
 
         <div className="mt-6">
           <div className="mb-2 flex items-center justify-between text-base font-black text-texto/80 sm:text-lg">
@@ -167,9 +193,10 @@ export default function Lector() {
               <button
                 type="button"
                 onClick={() => irA(paginaActual + 1)}
-                className="flex min-h-12 items-center justify-center rounded-xl bg-secundario px-4 py-3 text-lg font-black text-white transition-colors hover:bg-principal sm:text-xl"
+                disabled={espera > 0}
+                className="flex min-h-12 items-center justify-center rounded-xl bg-secundario px-4 py-3 text-lg font-black text-white transition-colors hover:bg-principal disabled:cursor-not-allowed disabled:opacity-50 sm:text-xl"
               >
-                Siguiente
+                {espera > 0 ? `Continúa en ${espera} s` : 'Siguiente'}
               </button>
             )}
           </div>

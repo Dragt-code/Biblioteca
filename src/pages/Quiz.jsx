@@ -1,6 +1,7 @@
 import { useParams, useSearchParams, Link } from 'react-router-dom'
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import cuentos from '../data/cuentos.json'
+import { registrarEvento } from '../hooks/seguimiento'
 
 export default function Quiz() {
   const { id } = useParams()
@@ -20,9 +21,15 @@ export default function Quiz() {
     finalizado: false,
   }
   const [estado, setEstado] = useState(inicial)
+  const idSesionQuiz = useRef(crypto.randomUUID?.() ?? `${Date.now()}-${Math.random()}`)
   const estadoActual = estado.clave === clave ? estado : inicial
 
   const quizNuevo = cuento?.quiz && !Array.isArray(cuento.quiz) && cuento.quiz.comunes
+  useEffect(() => {
+    if (estadoActual.finalizado && cuento && camino) {
+      registrarEvento('quiz_finalizado', { cuentoId: id, titulo: cuento.titulo, ruta: camino, aciertos: estadoActual.aciertos }, `quiz:${idSesionQuiz.current}`)
+    }
+  }, [estadoActual.finalizado, estadoActual.aciertos, id, camino, cuento])
 
   if (!cuento || !quizNuevo) {
     return (
@@ -69,6 +76,12 @@ export default function Quiz() {
     ...reflexion.porCamino[camino].preguntas,
   ]
   const totalPuntuables = preguntas.filter((p) => p.tipo !== 'reflexion').length
+
+  useEffect(() => {
+    if (estadoActual.finalizado) {
+      registrarEvento('quiz_finalizado', { cuentoId: id, titulo: cuento.titulo, ruta: camino, aciertos: estadoActual.aciertos }, `quiz:${idSesionQuiz.current}`)
+    }
+  }, [estadoActual.finalizado, estadoActual.aciertos, id, camino, cuento.titulo])
 
   if (estadoActual.finalizado) {
     const estrellas =

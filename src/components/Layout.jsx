@@ -1,12 +1,14 @@
 import { useEffect, useState } from 'react'
 import { NavLink, Outlet } from 'react-router-dom'
 import logo from '../assets/Log.png'
+import { useSeguimiento } from '../hooks/seguimiento'
 
 const navLinkClassName = ({ isActive }) =>
   `flex min-h-11 items-center justify-center rounded-xl px-3 py-2 text-sm font-extrabold transition-all sm:px-4 sm:text-base ${isActive ? 'bg-principal text-white shadow-sm' : 'text-texto/80 hover:bg-principal/8 hover:text-principal focus-visible:bg-principal/10'}`
 
 export default function Layout() {
   const [modoOscuro, setModoOscuro] = useState(() => localStorage.getItem('modo-mundo-letras') === 'oscuro')
+  const seguimiento = useSeguimiento()
 
   useEffect(() => {
     document.documentElement.dataset.theme = modoOscuro ? 'dark' : 'light'
@@ -31,6 +33,9 @@ export default function Layout() {
             </button>
             <NavLink to="/creditos" className={`${navLinkClassName({ isActive: false })} border border-primavera-lila/30`}>Créditos</NavLink>
           </nav>
+          <div className="flex items-center justify-center gap-2 self-center rounded-full bg-acento/35 px-3 py-1 text-xs font-black text-principal md:self-auto" title="Progreso guardado en este navegador">
+            <span>Mi ID: {seguimiento.id.slice(0, 12)}</span><span aria-hidden="true">·</span><span>⭐ {seguimiento.puntos} puntos</span>
+          </div>
         </div>
       </header>
       <main className="mx-auto flex w-full max-w-6xl flex-1 px-4 py-6 sm:px-6 sm:py-10 lg:px-8 lg:py-12">
